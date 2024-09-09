@@ -214,7 +214,7 @@ a {
 }
 
 .checkout-action {
-    width: 800px;
+    width: 1000px;
     border-top: 5px solid black;
     display: flex;
     flex-direction: column;
