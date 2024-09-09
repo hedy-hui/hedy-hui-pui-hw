@@ -92,6 +92,7 @@ a {
   padding: 10px;
 }
 
+/*This is to add the effect on the product and the product name when the user hovers over the product. */
 .product:hover {
     cursor: pointer;
     background-color: yellow;
