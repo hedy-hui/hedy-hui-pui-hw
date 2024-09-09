@@ -111,9 +111,13 @@ a {
     margin: 0px;
 }
 
+.product-name {
+    text-decoration: underline;
+}
 
 
-/* Product Detail Page */
+
+/* Product Detail Page (Index) */
 .product-detail {
     display: flex;
     flex-direction: column;
