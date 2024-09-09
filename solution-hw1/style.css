@@ -73,6 +73,10 @@ hr.solid {
 
 /* Individual Pages */
 /* Product Gallery Page */
+a {
+    text-decoration: none;
+}
+
 .product-gallery-image {
     width: 300px;
     height: 300px;
