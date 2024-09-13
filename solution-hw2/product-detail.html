@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- This is to link the css file to the html file. -->
+    <link rel="stylesheet" href="style.css">
+    <title>Product Detail</title>
+  </head>
+
+  <body>
+    <!-- This is the navigation menu which contains the shop logo, and links to the Product Gallery Page and the Shopping Cart Page. -->
+    <nav>
+        <section>
+          <a href="../solution-hw1/index.html">
+            <img src="../assets/logo/logo-01.svg"
+            class="shop-logo"
+            alt="Logo"/>
+          </a>
+    
+          <hr class="solid">
+        </section>
+        
+        <section class="navigation-menu">
+          <p><a href="../solution-hw1/index.html" class="current-page">PRODUCTS</a></p>
+          <p><a href="../solution-hw1/shopping-cart.html" class="other-page">CART</a></p>
+        </section>
+      </nav>
+
+    <!-- This is the content of the Product Detail Page, which includes the heading, an image, customization instructions, customization options for the glazing and the pack size, the price, and the add-to-cart button. -->
+    <main class="product-detail-main">
+        <h1 class="heading">Original cinnamon roll</h1>
+        <section class="product-detail">
+            <img src="../assets/products/original-cinnamon-roll.jpg"
+            class="product-detail-image"
+            alt="Image of original cinnamon roll"/>
+        <p class="customization-instructions">Customize our delicious, hand-made cinnamon roll to your liking!
+        </p>
+        </section>
+        
+        <!-- This is the customization section, which includes a dropdown menu for selecting the glazing and pack size. -->
+        <section class="customization">
+            <section class="glazing-customization">
+                <label for="glazing">Glazing:</label> <br>
+                <select name="glazing" id="glazing">
+                    <option value="Keep original">Keep original</option>
+                    <option value="Sugar milk">Sugar milk</option>
+                    <option value="Vanilla milk">Vanilla milk</option>
+                    <option value="Double chocolate">Double chocolate</option>
+                </select>
+            </section>
+            <section class="pack-size-customization">
+                <label for="packSize">Pack size:</label> <br>
+                <select name="packSize" id="packSize">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </section>
+        </section>
+     
+        <!-- The add-to-cart section consists of the item price and a button to add to cart. -->
+        <section class="add-to-cart-action">
+            <p class="product-detail-price">$ 2.49</p>
+            <button type="button" class="add-to-cart-button">Add to Cart</button> 
+        </section>
+    </main>
+  </body>
+</html>
