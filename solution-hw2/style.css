@@ -11,11 +11,6 @@ h1, p {
     flex-shrink: 0;
 }
 
-/* TO BE REMOVED if no horizontal line is used*/
-hr.solid {
-    border-top: 4px solid black;
-}
-
 /* Navigation */
 .header {
     display: flex;
@@ -43,18 +38,18 @@ hr.solid {
 .current-page {
     color: black;
     background-color: yellow;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .other-page {
     color: black;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: normal;
     text-decoration: none;
-    margin: 0px 80px 0px 30px;
+    margin: 0px 100px 0px 50px;
 }
 
 /* Heading */
@@ -67,14 +62,14 @@ hr.solid {
 }
 
 .heading {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: normal;
     padding: 0px;
     margin: 0px;
 }
 
 /* Body */
-.product-gallery-main, .product-detail-main, .shopping-cart-main {
+.product-detail-main, .shopping-cart-main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,16 +77,12 @@ hr.solid {
 
 /* Buttons */
 .add-to-cart-button, .checkout-button {
-    width: 150px;
-    height: 40px;
+    width: 200px;
+    height: 50px;
     font-size: 20px;
     font-weight: bold;
     border-color: black;
     background-color: yellow;
-}
-
-.add-to-cart-button{
-    margin-left: 30px;
 }
 
 .checkout-button{
@@ -99,8 +90,18 @@ hr.solid {
 }
 
 
+
 /* Individual Pages */
 /* Product Gallery Page */
+.product-gallery-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 80px 160px 0px 160px;
+}
+
 a {
     text-decoration: none;
 }
@@ -116,8 +117,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 30px; 
   padding: 10px;
+  margin: 20px 0px 20px 0px;
 }
 
 /*This is to add the effect on the product and the product name when the user hovers over the product. */
@@ -136,23 +137,25 @@ a {
 
 .product-name, .product-gallery-price {
     color: black;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: normal;
     margin: 0px;
 }
 
 .product-name {
     text-decoration: underline;
+    text-decoration-thickness: 0.5px;
 }
 
 
 
 /* Product Detail Page (Index) */
-.product-detail {
+.product-detail-content {
+    height: 600px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px; 
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px 120px 0px 160px; 
 }
 
 .product-detail-image {
@@ -161,37 +164,54 @@ a {
     border: 3px solid black;
 }
 
+.customization-content {
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+}
+
 .customization-instructions {
-    font-size: 20px;
-    width: 260px;
+    font-size: 28px;
+    width: 400px;
+    margin: 0px;
 }
 
 .glazing-customization, .pack-size-customization {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
+    font-size: 28px;
+}
+
+.glazing-customization {
+    padding-bottom: 24px;
+}
+
+.pack-size-customization {
+    padding-top: 24px;
 }
 
 .glazing-customization select, .pack-size-customization select {
-    width: 260px;
-    font-size: 20px;
+    width: 400px;
+    font-size: 28px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px 20px 10px 20px;
 }
 
 .add-to-cart-action {
-    width: 260px;
+    width: 400px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 100px;
 }
 
 .product-detail-price {
-    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 28px;
     font-weight: bold;
 }
 
