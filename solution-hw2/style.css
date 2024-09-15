@@ -137,7 +137,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 80px auto 80px 100px;
+    margin: 80px 36px 80px 80px;
 }
 
 .product-detail-image {
