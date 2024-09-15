@@ -137,7 +137,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 80px 36px 80px 80px;
+    margin: 80px 50px 80px 100px;
 }
 
 .product-detail-image {
@@ -157,7 +157,7 @@ a {
 
 .customization-instructions {
     font-size: 24px;
-    width: 400px;
+    width: 350px;
     margin: 0px;
 }
 
@@ -175,14 +175,14 @@ a {
 }
 
 .glazing-customization select, .pack-size-customization select {
-    width: 400px;
+    width: 350px;
     font-size: 24px;
     margin-top: 10px;
     padding: 10px 20px 10px 20px;
 }
 
 .add-to-cart-action {
-    width: 400px;
+    width: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
