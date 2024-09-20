@@ -1,0 +1,315 @@
+/* All Pages */
+/* Font */
+h1, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.shop-logo {
+    width: 400px;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+/* Navigation */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px 20px 0px; 
+    border-bottom: 4px solid black;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.current-page {
+    color: black;
+    background-color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 50px 0px 50px;
+}
+
+.other-page {
+    color: black;
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0px 50px 0px 50px;
+}
+
+/* Heading */
+.heading-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+/* Individual Pages */
+/* Product Gallery Page */
+.product-gallery-content {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 80px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.product-gallery-image {
+    width: 285px;
+    height: 285px;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+}
+
+/*This is to add the effect on the product and the product name when the user hovers over the product. */
+.product:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+.product:hover .product-name {
+    font-weight: bold;
+}
+
+.product-description {
+    width: 300px;
+}
+
+.product-name, .product-gallery-price {
+    color: black;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.product-name {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+}
+
+
+
+/* Product Detail Page (Index) */
+.product-detail-content {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px 50px 80px 100px;
+}
+
+.product-detail-image {
+    width: 600px;
+    height: 600px;
+    border: 3px solid black;
+}
+
+.customization-content {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0px 40px 50px;
+    box-sizing: border-box; 
+}
+
+.customization-instructions {
+    font-size: 24px;
+    width: 350px;
+    margin: 0px;
+}
+
+.glazing-customization, .pack-size-customization {
+    font-family: Helvetica;
+    font-size: 24px;
+}
+
+.glazing-customization {
+    padding-bottom: 24px;
+}
+
+.pack-size-customization {
+    padding-top: 24px;
+}
+
+.glazing-customization select, .pack-size-customization select {
+    width: 350px;
+    font-size: 24px;
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.add-to-cart-action {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-detail-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.add-to-cart-button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-color: black;
+    background-color: yellow;
+}
+
+
+
+/* Shopping Cart Page */
+.shopping-cart-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0px 80px 200px;
+}
+
+.shopping-cart-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.shopping-cart-item-content {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.shopping-cart-image {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+.remove-item {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 800px;
+    margin: 0px;
+}
+
+.shopping-cart-item-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 40px 40px;
+    flex-grow: 1;
+}
+
+.shopping-cart-item-customization {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item-name, .glazing, .pack-size, .shopping-cart-price {
+    font-size: 24px;
+    margin: 10px 0px 10px 0px;
+}
+
+.shopping-cart-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.checkout-total {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkout-section {
+    width: 800px;
+    border-top: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.total-price {
+    width: 560px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin: 20px 0px 0px 0px;
+}
+
+.total-price-text {
+    font-size: 24px;
+    margin: 0px;
+}
+
+.checkout-button {
+    font-size: 20px;
+    font-weight: bold;
+    border-color: black;
+    background-color: yellow;
+    margin-top: 20px;
+    padding: 20px 30px 20px 30px;
+}
