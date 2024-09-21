@@ -1,3 +1,4 @@
+/* Initialize glazing and pack size dropdown options when the page loads */
 window.onload = function(){
     let glazes = document.querySelector('#glazing');
     let packSizes = document.querySelector('#packSize');
@@ -19,6 +20,7 @@ window.onload = function(){
 
 let basePrice = 2.49;
 
+/* Array of different glazing options and their respective price adaptations */
 let allGlazing = [
     {
         glazing: "Keep original",
@@ -38,6 +40,7 @@ let allGlazing = [
     },
 ];
 
+/* Array of different pack size options and their respective price adaptations */
 let allPackSize = [
     {
         packSize: 1,
@@ -57,6 +60,7 @@ let allPackSize = [
     },
 ];
 
+/* Function to update the price when glazing or pack size changes */
 function priceUpdate(){
     let glazingSelection = document.querySelector('#glazing').value;
     let packSelection = parseInt(document.querySelector('#packSize').value);
