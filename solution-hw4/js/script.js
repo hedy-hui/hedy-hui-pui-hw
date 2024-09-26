@@ -18,6 +18,7 @@ window.onload = function(){
 
     let rollSelection = rolls[rollType];
 
+    /* Extract the current roll’s information (name, image path, price) from the dictionary */
     document.querySelector(".heading").innerText = `${rollType} Cinnamon Roll`;
     document.querySelector(".product-detail-image").src = `../assets/products/${rollSelection.imageFile}`;
     basePrice = rollSelection.basePrice;
