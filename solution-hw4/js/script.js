@@ -1,5 +1,8 @@
 let cart = [];
 let basePrice;
+let glazingSelection;
+let packSelection;
+let displayedPrice;
 
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
@@ -49,9 +52,6 @@ window.onload = function(){
     document.querySelector('#packSize').addEventListener('change', priceUpdate);
 
     document.querySelector('.add-to-cart-button').addEventListener('click', function(){
-        let displayedPrice = parseFloat(document.querySelector(".product-detail-price").innerText.replace("$ ", ""));
-        let glazingSelection = document.querySelector('#glazing').value;
-        let packSelection = parseInt(document.querySelector('#packSize').value);
         let newRoll = new Roll(rollType, glazingSelection, packSelection, displayedPrice);
         cart.push(newRoll);
         console.log(cart);
@@ -100,8 +100,8 @@ let allPackSize = [
 
 /* Function to update the price when glazing or pack size changes */
 function priceUpdate(){
-    let glazingSelection = document.querySelector('#glazing').value;
-    let packSelection = parseInt(document.querySelector('#packSize').value);
+    glazingSelection = document.querySelector('#glazing').value;
+    packSelection = parseInt(document.querySelector('#packSize').value);
 
     let glazingNewPrice = allGlazing.find(glaze => glaze.glazing === glazingSelection).glazingPrice;
     let packNewPrice = allPackSize.find(pack => pack.packSize === packSelection).packPrice;
