@@ -2,7 +2,6 @@ let cart = [];
 let basePrice;
 let glazingSelection;
 let packSelection;
-let displayedPrice;
 
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
@@ -52,7 +51,7 @@ window.onload = function(){
     document.querySelector('#packSize').addEventListener('change', priceUpdate);
 
     document.querySelector('.add-to-cart-button').addEventListener('click', function(){
-        let newRoll = new Roll(rollType, glazingSelection, packSelection, displayedPrice);
+        let newRoll = new Roll(rollType, glazingSelection, packSelection, basePrice);
         cart.push(newRoll);
         console.log(cart);
     });
