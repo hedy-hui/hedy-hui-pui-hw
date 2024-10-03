@@ -217,7 +217,7 @@ a {
     margin: 80px 0px 80px 200px;
 }
 
-.shopping-cart-item {
+.shopping-cart-items {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
