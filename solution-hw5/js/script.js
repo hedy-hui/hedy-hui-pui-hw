@@ -1,6 +1,6 @@
 let cart = [];
 let basePrice;
-let glazingSelection;
+let newRoll;
 let packSelection;
 
 class Roll {
@@ -9,6 +9,14 @@ class Roll {
         this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
+        this.calculatedPrice = this.calculatePrice();
+    }
+
+    calculatePrice(){
+        let glazingNewPrice = allGlazing.find(glaze => glaze.glazing === this.glazing).glazingPrice;
+        let packNewPrice = allPackSize.find(pack => pack.packSize === this.size).packPrice;
+    
+        return ((basePrice + glazingNewPrice)*packNewPrice).toFixed(2);
     }
 }
 
@@ -21,7 +29,7 @@ window.onload = function(){
     let rollSelection = rolls[rollType];
 
     /* Extract the current roll’s information (name, image path, price) from the dictionary */
-    document.querySelector(".heading").innerText = `${rollType} Cinnamon Roll`;
+    document.querySelector(".product-detail-heading").innerText = `${rollType} Cinnamon Roll`;
     document.querySelector(".product-detail-image").src = `../assets/products/${rollSelection.imageFile}`;
     basePrice = rollSelection.basePrice;
     document.querySelector(".product-detail-price").innerText = "$ " + basePrice.toFixed(2);
@@ -60,19 +68,19 @@ window.onload = function(){
 /* Array of different glazing options and their respective price adaptations */
 let allGlazing = [
     {
-        glazing: "Keep original",
+        glazing: "Keep Original",
         glazingPrice: 0,
     },
     {
-        glazing: "Sugar milk",
+        glazing: "Sugar Milk",
         glazingPrice: 0,
     },
     {
-        glazing: "Vanilla milk",
+        glazing: "Vanilla Milk",
         glazingPrice: 0.5,
     },
     {
-        glazing: "Double chocolate",
+        glazing: "Double Chocolate",
         glazingPrice: 1.5,
     },
 ];
@@ -80,19 +88,19 @@ let allGlazing = [
 /* Array of different pack size options and their respective price adaptations */
 let allPackSize = [
     {
-        packSize: 1,
+        packSize: "1",
         packPrice: 1,
     },
     {
-        packSize: 3,
+        packSize: "3",
         packPrice: 3,
     },
     {
-        packSize: 6,
+        packSize: "6",
         packPrice: 5,
     },
     {
-        packSize: 12,
+        packSize: "12",
         packPrice: 10,
     },
 ];

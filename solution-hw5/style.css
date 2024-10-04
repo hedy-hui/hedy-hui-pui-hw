@@ -63,7 +63,7 @@ h1, p {
     padding-bottom: 10px;
 }
 
-.heading {
+.index-heading, .product-detail-heading, .cart-heading {
     font-size: 40px;
     font-weight: normal;
     padding: 0px;
@@ -265,7 +265,7 @@ a {
     align-items: flex-start;
 }
 
-.item-name, .glazing, .pack-size, .shopping-cart-price {
+.item-description, .shopping-cart-price {
     font-size: 24px;
     margin: 10px 0px 10px 0px;
 }

@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <!-- This is to link the css file to the html file. -->
   <link rel="stylesheet" href="style.css">
+  <script src="./js/script.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/rollsData.js"></script>
   <title>Shopping Cart</title>
 </head>
 
@@ -23,7 +26,7 @@
         <p><a href="../solution-hw5/shopping-cart.html" class="current-page">CART</a></p>
       </section>
       <section class="heading-container">
-        <h1 class="heading">Our hand-made cinnamon rolls</h1>
+        <h1 class="cart-heading">Our hand-made cinnamon rolls</h1>
       </section>
     </section>
   </nav>
@@ -31,49 +34,32 @@
   <!-- This is the content of the Shopping Cart Page, which includes two cart items, and the checkout section. -->
   <main class="shopping-cart-content">
 
-    <!-- There are a total of two cart items. Each section includes an image, "remove", item details, and the price. -->
-    <section class="shopping-cart-item">
-      <section class="shopping-cart-item-content">
-        <img src="../assets/products/original-cinnamon-roll.jpg" class="shopping-cart-image"
-          alt="Image of original cinnamon roll" />
+    <template class="shopping-cart-template">
+      <!-- There are a total of two cart items. Each section includes an image, "remove", item details, and the price. -->
+      <section class="shopping-cart-item">
+        <section class="shopping-cart-item-content">
+          <img src="" class="shopping-cart-image"
+            alt="Image of original cinnamon roll" />
 
-        <section class="shopping-cart-item-details">
-          <section class="shopping-cart-item-customization">
-            <p class="item-name">Original Cinnamon Roll</p>
-            <p class="glazing">Glazing: Keep original</p>
-            <p class="pack-size">Pack Size: 1</p>
+          <section class="shopping-cart-item-details">
+            <section class="shopping-cart-item-customization">
+              <p class="item-description"></p>
+            </section>
+            <p class="shopping-cart-price"></p>
           </section>
-          <p class="shopping-cart-price">$ 2.49</p>
         </section>
+        <p class="remove-item">Remove</p>
       </section>
-      <p class="remove-item">Remove</p>
-    </section>
-
-    <section class="shopping-cart-item">
-      <section class="shopping-cart-item-content">
-        <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" class="shopping-cart-image"
-          alt="Image of double-chocolate cinnamon roll" />
-
-        <section class="shopping-cart-item-details">
-          <section class="shopping-cart-item-customization">
-            <p class="item-name">Double Chocolate Cinnamon Roll</p>
-            <p class="glazing">Glazing: Sugar milk</p>
-            <p class="pack-size">Pack Size: 6</p>
-          </section>
-          <p class="shopping-cart-price">$ 27.45</p>
-        </section>
-      </section>
-      <p class="remove-item">Remove</p>
-    </section>
+    </template>
 
     <!-- The checkout section consists of the total price and a button to check out. -->
     <section class="checkout-section">
-        <section class="total-price">
-          <p class="total-price-text">Total</p>
-          <p class="total-price-text">$ 29.94</p> 
-        </section>
-        <button type="button" class="checkout-button">Checkout</button>
-    </section>  
+      <section class="total-price">
+        <p class="total-price-text">Total</p>
+        <p class="total-price-text">$ 29.94</p>
+      </section>
+      <button type="button" class="checkout-button">Checkout</button>
+    </section>
   </main>
 </body>
 
