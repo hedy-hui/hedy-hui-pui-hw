@@ -1,6 +1,6 @@
 let cart = [];
 let basePrice;
-let newRoll;
+let glazingSelection;
 let packSelection;
 
 class Roll {
@@ -9,14 +9,6 @@ class Roll {
         this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
-        this.calculatedPrice = this.calculatePrice();
-    }
-
-    calculatePrice(){
-        let glazingNewPrice = allGlazing.find(glaze => glaze.glazing === this.glazing).glazingPrice;
-        let packNewPrice = allPackSize.find(pack => pack.packSize === this.size).packPrice;
-    
-        return ((basePrice + glazingNewPrice)*packNewPrice).toFixed(2);
     }
 }
 
@@ -68,19 +60,19 @@ window.onload = function(){
 /* Array of different glazing options and their respective price adaptations */
 let allGlazing = [
     {
-        glazing: "Keep Original",
+        glazing: "Keep original",
         glazingPrice: 0,
     },
     {
-        glazing: "Sugar Milk",
+        glazing: "Sugar milk",
         glazingPrice: 0,
     },
     {
-        glazing: "Vanilla Milk",
+        glazing: "Vanilla milk",
         glazingPrice: 0.5,
     },
     {
-        glazing: "Double Chocolate",
+        glazing: "Double chocolate",
         glazingPrice: 1.5,
     },
 ];
@@ -88,19 +80,19 @@ let allGlazing = [
 /* Array of different pack size options and their respective price adaptations */
 let allPackSize = [
     {
-        packSize: "1",
+        packSize: 1,
         packPrice: 1,
     },
     {
-        packSize: "3",
+        packSize: 3,
         packPrice: 3,
     },
     {
-        packSize: "6",
+        packSize: 6,
         packPrice: 5,
     },
     {
-        packSize: "12",
+        packSize: 12,
         packPrice: 10,
     },
 ];
