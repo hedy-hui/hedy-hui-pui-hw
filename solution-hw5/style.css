@@ -250,6 +250,10 @@ a {
     margin: 0px;
 }
 
+.remove-item:hover {
+    cursor: pointer;
+}
+
 .shopping-cart-item-details {
     display: flex;
     flex-direction: row;
