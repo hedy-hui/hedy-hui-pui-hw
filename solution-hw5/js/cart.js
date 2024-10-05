@@ -54,7 +54,7 @@ function createElement(roll) {
     clone.querySelector('.item-pack').innerText = `Pack size: ${roll.size}`;
 
     let rollPrice = calculatePrice(roll);
-    clone.querySelector('.item-price').innerText = `$${rollPrice}`;  
+    clone.querySelector('.item-price').innerText = `$ ${rollPrice}`;  
     
     // connect this clone to our roll.element
     roll.element = clone.querySelector('.shopping-cart-item');
