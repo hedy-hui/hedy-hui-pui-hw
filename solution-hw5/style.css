@@ -54,6 +54,10 @@ h1, p {
     margin: 0px 50px 0px 50px;
 }
 
+.current-page:hover, .other-page:hover {
+    cursor: pointer;
+}
+
 /* Heading */
 .heading-container {
     display: flex;
@@ -290,7 +294,7 @@ a {
 
 .checkout-section {
     width: 800px;
-    margin-left: 670px;
+    margin-left: 300px;
     border-top: 4px solid black;
     display: flex;
     flex-direction: column;
