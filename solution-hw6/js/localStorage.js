@@ -1,18 +1,13 @@
-let rollsInCart = new Set();
-
 function saveToLocalStorage() {
-    const rollArray = Array.from(rollsInCart);
-    const rollArrayString = JSON.stringify(rollArray);
-    
-    console.log(rollsInCart);
-
-    localStorage.setItem('storedRoll', rollArrayString);
-    localStorage.getItem('storedRoll');
+    localStorage.setItem('storedRoll', JSON.stringify(cart));
 }
 
 function retrieveFromLocalStorage() {
-    const rollArrayString = localStorage.getItem('storedRoll');
-    const rollArray = JSON.parse(rollArrayString);
-    rollsInCart = new Set(rollArray);
-    console.log(rollArray);
+    let storedCart = localStorage.getItem('storedRoll');
+    if (storedCart) {
+        let parsedCart = JSON.parse(storedCart);
+        cart = parsedCart.map(roll => new Roll(roll.type, roll.glazing, roll.size, roll.basePrice));
+    } else {
+        cart = [];  // Initialize empty cart if none exists
+    }
 }

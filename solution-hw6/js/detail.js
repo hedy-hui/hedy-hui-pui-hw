@@ -1,5 +1,6 @@
 let glazingSelection;
 let packSelection;
+let cart = []; 
 
 function priceUpdate() {
     glazingSelection = document.querySelector('#glazing').value;
@@ -51,8 +52,12 @@ window.onload = function () {
     document.querySelector('#glazing').addEventListener('change', priceUpdate);
     document.querySelector('#packSize').addEventListener('change', priceUpdate);
 
+    retrieveFromLocalStorage(); 
+
     document.querySelector('.add-to-cart-button').addEventListener('click', function () {
-        rollsInCart.add(new Roll(rollType, glazingSelection, packSelection, basePrice));
-        saveToLocalStorage();
+    let newRoll = new Roll(rollType, glazingSelection, packSelection, basePrice);
+        cart.push(newRoll);
+        saveToLocalStorage(); // Save the updated cart to local storage
+        console.log(cart); // Print current cart
     });
 }
