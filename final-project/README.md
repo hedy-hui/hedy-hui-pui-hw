@@ -257,7 +257,6 @@ I will use straightforward language, high-contrast visuals, and provide text alt
 >What information do you specifically want to convey and include on your website?
 
 The website will include a daily entry section for users to log emotions, an overview with recent entries, and visualization tools for tracking emotional trends over weeks or months. Additionally, I’ll offer a “reflection” section with prompts that encourage users to consider the reasons behind their emotions and any patterns they notice.
-…
 
 ## Feedback Summary
 
