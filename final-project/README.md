@@ -204,11 +204,9 @@ How would you use Generative AI responsibly?
 
 ![Skethces of Portfolio Website](./images/Portfolio%20Website_Sketch.png)
 
-The purpose of this project is to build a visually pleasing, easy-to-navigate portfolio that showcases my design projects. It will be used for job applications, reflecting both my design proficiency and coding skills.
-
 >What is the basic idea of your final project? (1-2 sentences) 
 
-The basic idea of my final project is to create a visually appealing and user-friendly portfolio website that effectively showcases my design projects and coding skills. The portfolio will serve as a dynamic representation of my work, aimed at attracting potential employers and demonstrating my proficiency in UX/UI design and web development.
+The purpose of this project is to create a visually appealing and user-friendly portfolio website that effectively showcases my design projects and coding skills. The portfolio will serve as a dynamic representation of my work, aimed at attracting potential employers and demonstrating my proficiency in UX/UI design and web development.
 
 >How do you plan to make your design interactive and engaging?  
 
@@ -222,27 +220,64 @@ I will follow WCAG (Web Content Accessibility Guidelines) principles by using su
 
 I want to convey information that highlights my skills, experiences, and design philosophy. This will include a homepage, an about page detailing my background and interests, three project showcases with descriptions and visuals, and a resume page. 
 
+### *Idea 2: Budget Tracker*
+![Skethces of Budget Tracker](./images/Budget%20Tracker_Sketch.png)
 
-Add a few sentences about your design. Briefly state the motivation of each project idea. Example questions to answer:
+>What is the basic idea of your final project? (1-2 sentences) 
 
-* What is the basic idea of your final project? (1-2 sentences)  
-* How do you plan to make your design interactive and engaging?  
-* How do you plan to make your design accessible?  
-* What information do you specifically want to convey and include on your website?
+The purpose of this project is to create a user-friendly budget tracker that allows individuals to monitor their daily or monthly spending. The app will help users categorize expenses, set budgets, and view a summary to keep their finances on track.
 
-### *Idea 2*
+>How do you plan to make your design interactive and engaging?  
 
-…
+I plan to incorporate features like customizable spending categories, a progress bar that shows spending relative to budget, and simple data visualizations, such as pie charts for spending breakdowns. I’ll also add alerts and notifications to help users stay mindful of their spending.
 
-### *Idea 3*
+>How do you plan to make your design accessible?  
 
+I will use clear, high-contrast colors and large fonts for readability. Additionally, I’ll include descriptive labels for input fields, keyboard navigation for all interactive elements.
+
+>What information do you specifically want to convey and include on your website?
+
+I want to include information that helps users understand their financial habits, such as an expense input area, budget settings, and a spending summary. The website will also provide a monthly or daily summary.
+
+### *Idea 3: Emotion Diary*
+![Skethces of Emotion Diary](./images/Emotion%20Diary_Sketch.png)
+
+>What is the basic idea of your final project? (1-2 sentences) 
+
+The purpose of this project is to create an emotion diary website where users can log and track their daily emotions. The site will help users reflect on their emotional well-being over time, potentially revealing patterns and encouraging personal insights.
+
+>How do you plan to make your design interactive and engaging?  
+
+I plan to include features like a daily mood tracker with selectable emojis or icons, prompts that encourage reflection, and a calendar view for reviewing past entries. I may also add simple visualizations to show trends or shifts in mood over time.
+
+>How do you plan to make your design accessible?  
+
+I will use straightforward language, high-contrast visuals, and provide text alternatives for all icons. I’ll make sure all input fields and interactive components are accessible via keyboard navigation.
+
+>What information do you specifically want to convey and include on your website?
+
+The website will include a daily entry section for users to log emotions, an overview with recent entries, and visualization tools for tracking emotional trends over weeks or months. Additionally, I’ll offer a “reflection” section with prompts that encourage users to consider the reasons behind their emotions and any patterns they notice.
 …
 
 ## Feedback Summary
 
-Summarize all the critiques you received during the lab session (\~300 words). 
+For the Portfolio website project, feedback emphasized improving the information architecture for the home, case study, and about pages. My classmates and TA suggested reusing styles, creating templates, and organizing files into folders to enhance code organization and maintainability. For instance, a well-structured codebase would facilitate easier updates and scalability in the future. They also advised that if I use a pre-existing template, I should personalize it to showcase my unique skills and aesthetic preferences, ensuring the site reflects my learning and stands out from generic designs commonly seen online. For interactivity, hover effects were recommended instead of pre-loading elements, which would enhance user engagement by providing a more dynamic browsing experience.
+
+In the Budget Tracker project, critiques highlighted the importance of user privacy and the incorporation of advanced features. My classmates recommended implementing AI-driven categorization to simplify user input, thereby creating a more intuitive and streamlined experience for users managing their finances. Privacy concerns were raised regarding the sensitive nature of the financial data users would input.
+
+The Emotion Diary project received feedback focused on enhancing user interaction and data visualization. Suggestions included using customizable pie charts and other graphic representations to provide clearer insights into emotional trends over time. Additionally, they encouraged me to collect more diverse data to support varied visual displays and facilitate deeper analysis of users' emotional patterns. Optional note-taking and a feature to mark special entries with a star were proposed to increase user engagement and personalization. Furthermore, allowing users to create accounts was advised to ensure data security and retention.
+
+Overall, the feedback encouraged me to prioritize core functionality while considering nice-to-have features if time permits, allowing for a balance between essential and enhanced user experiences.
+
 
 ## Feedback Digestion
 
-Digest the feedback you got in the lab (\~300 words). Indicate which critique you will act on in your next design and why you chose to incorporate/dismiss pieces of critique.
+Based on the feedback received during the critique session, I will prioritize the following suggestions:
 
+For the Portfolio website, I plan to implement the recommendation to create templates, as this will streamline development and facilitate future updates. Personalizing a pre-existing template is also a priority, as it will showcase my unique skills and design philosophy, setting my portfolio apart from others. Additionally, I will incorporate hover effects to foster a more interactive experience, ensuring that visitors engage actively with my portfolio rather than passively reading through it.
+
+In the Budget Tracker project, addressing privacy concerns is paramount, given the sensitivity of financial data. While the suggestion to use AI-driven categorization is appealing, as it could simplify user input and enhance usability, I may ultimately dismiss it due to potential complications in ensuring data privacy and security. I want to prioritize building a solid foundation focused on user trust before incorporating more complex features.
+
+For the Emotion Diary, the feedback on data visualization and user interaction resonated strongly with me. I plan to integrate customizable pie charts and varied visual displays to provide deeper insights into emotional patterns, enhancing user engagement. Moreover, I will implement features that allow optional note-taking and the ability to mark significant entries, as these will encourage users to reflect more meaningfully on their emotions.
+
+Overall, I am more inclined toward the Emotion Diary project because it aligns closely with my personal interests. My classmates also highlighted its significant potential for development due to its unique concept. Unlike the Budget Tracker, which may present privacy concerns, the Emotion Diary offers a creative avenue to explore emotional well-being without the same level of sensitivity associated with financial data, making it an exciting project to develop further.
