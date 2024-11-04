@@ -169,27 +169,30 @@ On the About page, I considered the feedback of replacing cartoons with photos o
 
 - [x] Week 9 Oct 28 \- Nov 1:
   - [X] FP1 due
-  - [x] Review feedback from FP1 and decide on which idea to be the final project.
+  - [x] Review feedback from FP1 and decide on which idea to be the final project
   
 - [ ] Week 10 Nov 4 \- Nov 8:   
   - [ ] FP2 due
-  - [ ] Review feedback from FP2 to assess usability and design effectiveness.
-  - [ ] Refine final design based on feedback.
+  - [ ] Review feedback from FP2 to assess usability and design effectiveness
+  - [ ] Refine final design based on feedback
 
 - [ ] Week 11 Nov 11 \- Nov 15:  
-  - [ ] Draft writing content for the portfolio.
-  - [ ] Prepare all the images needed for the portfolio.
-  - [ ] Code the About Page. 
+  - [ ] Draft writing content for the portfolio
+  - [ ] Prepare all the images needed for the portfolio
+  - [ ] Code the About Page 
 
 - [ ] Week 12 Nov 18 \- Nov 22:   
-  - [ ] Code the Landing Page and Photography Page.
+  - [ ] Code the Landing Page and Photography Page
+  - [ ] FP3 due 
+  - [ ] Iterate baed on feedback received for FP3
 
 - [ ] Week 13 Nov 25 \- Nov 29:  
-  - [ ] Code the project pages.
+  - [ ] Code the project pages
   - [ ] Thanksgiving  
+
 - [ ] Week 14 Dec 2 \- Dec 6:  
-  - [ ] Polish the overall design.
-  - [ ] Review the entire portfolio website, proofread the content, and check if the flows work.
+  - [ ] Polish the overall design
+  - [ ] Review the entire portfolio website, proofread the content, and check if the flows work
   - [ ] FP4 due 
 
 ### *Libraries and Other Components*
