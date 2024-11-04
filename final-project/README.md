@@ -208,7 +208,7 @@ On the About page, I considered the feedback of replacing cartoons with photos o
 ### *Tool Use*
 
 * ChatGPT  
-  * I will use ChatGPT to assist in generating content for my design portfolio website, such as writing descriptions for my projects, creating engaging narratives about my design process, and formulating responses to potential user inquiries. ChatGPT can help streamline my writing process by providing suggestions and improving clarity. Moreover, I will use it for debugging. It can clarify error messages, helping me identify the root cause of problems more efficiently. Furthermore, I can have it review code snippets, gaining insights into potential inefficiencies or best practices that enhance code quality. 
+  * I will use ChatGPT to proofread the text of my design portfolio website. It can help streamline my writing process by providing suggestions and improving clarity. Moreover, I will use it for debugging since it can clarify error messages, helping me identify the root cause of problems more efficiently. Furthermore, I can have it review code snippets, gaining insights into potential inefficiencies or best practices that enhance code quality. 
   * However, I will not use it for final edits or critical decision-making because it might not fully capture my unique voice and design intentions. I will be the one to make final edits so that I can convey my personality in the portfolio.  
 * GitHub Copilot  
   * I will use GitHub Copilot to enhance my coding efficiency while developing my portfolio website. It can assist me in writing code snippets, suggesting improvements, and offering real-time debugging support. This will help me learn best practices and speed up my coding process.
