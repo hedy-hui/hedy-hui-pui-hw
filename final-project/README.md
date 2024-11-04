@@ -140,7 +140,7 @@ Prototype 2 differed from Prototype 1 in terms of the navigation bar. Prototype 
 
 ## Usability Test
 
-I conducted two usability test session with two participants over Zoom using the think-aloud protocol.  
+I conducted two usability test sessions with two participants over Zoom using the think-aloud protocol.  
 
 In Prototype 1, users appreciated the Landing Page for its readable structure, clear focus on my name, and visually engaging project images. However, they suggested clarifying project titles for better understanding and making images clickable to improve navigation. Hence, for the final design, I clarified project titles and made images clickable, allowing users to explore projects more intuitively.
 
