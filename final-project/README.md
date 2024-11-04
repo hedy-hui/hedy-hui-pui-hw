@@ -194,14 +194,11 @@ On the About page, I considered the feedback of replacing cartoons with photos o
 
 ### *Libraries and Other Components*
 
-* Bideo.js
- * I plan to use it to add video loops of design-related visuals or scenes relevant to my work on the landing page. This will make the landing page more visually appealing, creating a welcoming yet dynamic first impression for visitors.
+* Bideo.js: I plan to use it to add video loops of design-related visuals or scenes relevant to my work on the landing page. This will make the landing page more visually appealing, creating a welcoming yet dynamic first impression for visitors.
 
-* Anime.js
-  * It is a flexible animation library that I will use to enhance interactions across the portfolio. For instance, I plan to implement smooth transitions when hovering over project images, allowing them to slightly enlarge or animate with a bounce effect. I will also use it to bring in subtle animations when loading sections, like having text fade in or slide up, which adds a sense of depth and polish without overwhelming the viewer. 
+* Anime.js: It is a flexible animation library that I will use to enhance interactions across the portfolio. For instance, I plan to implement smooth transitions when hovering over project images, allowing them to slightly enlarge or animate with a bounce effect. I will also use it to bring in subtle animations when loading sections, like having text fade in or slide up, which adds a sense of depth and polish without overwhelming the viewer. 
 
-* ReactJS
-  * I will use React components to build each section (e.g. the project gallery, photography page, and about page) for consistency and reusability. For example, the project section will leverage reusable components for displaying projects, so I can easily update the portfolio by adding new projects without modifying the entire codebase. Moreover, I will also use React to manage state, such as handling actions like toggling carousels on the photography page or expanding content areas for a more interactive experience.
+* ReactJS: I will use React components to build each section (e.g. the project gallery, photography page, and about page) for consistency and reusability. For example, the project section will leverage reusable components for displaying projects, so I can easily update the portfolio by adding new projects without modifying the entire codebase. Moreover, I will also use React to manage state, such as handling actions like toggling carousels on the photography page or expanding content areas for a more interactive experience.
 
 ## Generative AI Use Plan
 
