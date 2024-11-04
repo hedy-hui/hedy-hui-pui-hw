@@ -131,7 +131,7 @@ The purpose of this project is to create a visually appealing and user-friendly 
 
 ![prototype 1](./images_FP2/Prototype%201.png)
 
-On the Landing Page, users appreciated the readable structure and engaging project images but suggested clearer project titles and making images clickable. The Project Page was praised for its intuitive navigation and highlighted "How might we" section but would benefit from larger margins and consistent heading colors. On the Photography Page, users valued the easy navigation and personal perspective but recommended adding a theme, consistent spacing, and a carousel for improved photo display. The About Page images were well-received; however, participants suggested more descriptive headings and narrower text. Overall, users expressed that the top navigation bar was effective for easy access across pages.
+On the Landing Page, users appreciated the readable structure and engaging project images but suggested clearer project titles and making images clickable. The Project Page was praised for its intuitive navigation and the highlighted "How might we" section, but it would benefit from larger margins and consistent heading colors. On the Photography Page, users valued the easy navigation and personal perspective but recommended adding a theme, consistent spacing, and a carousel for improved photo display. The About Page images were well-received; however, participants suggested more descriptive headings and narrower text. Overall, users expressed that the top navigation bar was effective for easy access across pages.
 
 ### *Prototype 2*
 ![prototype 2](./images_FP2/Prototype%202.png)
