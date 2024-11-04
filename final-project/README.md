@@ -123,23 +123,29 @@ Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-gener
 
 ## Project Description
 
-Briefly restate your motivation and a short description of your project.
+The purpose of this project is to create a visually appealing and user-friendly portfolio website that effectively showcases my design projects and coding skills. The portfolio will serve as a dynamic representation of my work, aimed at attracting potential employers and demonstrating my proficiency in UX/UI design and web development. It will feature a home page, three projects that I have worked on, a photography page, an about page, and a resume page.
 
 ## High-Fi Prototypes
 
 ### *Prototype 1*
 
-![title for prototype1](images/prototype1.png)
+![prototype 1](./images_FP2/Prototype%201.png)
 
-A brief description and summary of the user feedback (\<100 words, 2 images) 
+On the Landing Page, users appreciated the readable structure and engaging project images but suggested clearer project titles and making images clickable. The Project Page was praised for its intuitive navigation and highlighted "How might we" section but would benefit from larger margins and consistent heading colors. On the Photography Page, users valued the easy navigation and personal perspective but recommended adding a theme, consistent spacing, and a carousel for improved photo display. The About Page images were well-received; however, participants suggested more descriptive headings and narrower text. Overall, users expressed that the top navigation bar was effective for easy access across pages.
 
 ### *Prototype 2*
+![prototype 2](./images_FP2/Prototype%202.png)
 
-…
+Prototype 2 differed from Prototype 1 in terms of the navigation bar. Prototype 2 has a left-side navigation bar, and users found that the black color was visually overpowering and created a sense of division across the pages. While the sidebar placement of the logo and navigation tabs was unique, participants noted that the tabs were difficult to read due to their 90-degree rotation, which made navigation less intuitive. This layout was also seen as less cohesive overall, as the bold sidebar color contrasted sharply with the rest of the page content. Users expressed a preference for the design of prototype 1 as it feels more unified and offers easier readability in navigation.
 
 ## Usability Test
+The usability test provided valuable insights into both prototypes. In Prototype 1, users appreciated the Landing Page for its readable structure, clear focus on my name, and visually engaging project images. However, they suggested clarifying project titles for better understanding and making images clickable to improve navigation. Hence, for the final design, I clarified project titles and made images clickable, allowing users to explore projects more intuitively.
 
-Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
+On the Project Page, the navigation bar and the emphasis on the "How might we" statement were positively received. Users recommended increasing the margins to prevent crowding. Therefore, I adjusted the margins from 100px to 200px across all pages, so as to improve readability for users. 
+
+For the Photography Page, users appreciated how I used photos to convey how I view the world, but they suggested enhancing spacing consistency and adopting a thematic organization. To address this, I categorized the photos into themes, such as "sunset", "cherry blossoms", and "harbor", and implemented carousels for better presentation and smoother browsing, enhancing the page's flow and organization.
+
+Meanwhile, feedback on Prototype 2 was more critical, particularly regarding the left-side sidebar. Users felt that the black color was too bold and created a division across the page, drawing their attention away from the content of the page. Additionally, the 90-degree rotation of navigation tabs made them difficult to read. That's why they preferred the design of prototype 1. Hence, I decided to finalize Prototype 1 as my preferred layout for the final design, since it better supports readability, consistency, and user-friendly navigation.
 
 ## Updated Designs
 
@@ -151,23 +157,31 @@ Summarize the feedback you received in the lab session and discuss how it influe
 
 ## Milestones
 
-Outline weekly milestones to plan your expected implementation progress until the end of the semester (\~300 words). 
-
 ### *Implementation Plan*
 
 - [ ] Week 9 Oct 28 \- Nov 1:
   - [X] FP1 due
-  - [ ] ...
+  - [x] Review feedback from FP1 and decide on which idea to be the final project.
   
 - [ ] Week 10 Nov 4 \- Nov 8:   
   - [ ] FP2 due
+  - [ ] Review feedback from FP2 to assess usability and design effectiveness.
+  - [ ] Refine final design based on feedback.
 
 - [ ] Week 11 Nov 11 \- Nov 15:  
-- [ ] Week 12 Nov 18 \- Nov 22:   
-- [ ] Week 13 Nov 25 \- Nov 29:  
+  - [ ] Draft writing content for the portfolio.
+  - [ ] Prepare all the images needed for the portfolio.
+  - [ ] Code the About Page. 
 
+- [ ] Week 12 Nov 18 \- Nov 22:   
+  - [ ] Code the Landing Page and Photography Page.
+
+- [ ] Week 13 Nov 25 \- Nov 29:  
+  - [ ] Code the project pages.
   - [ ] Thanksgiving  
 - [ ] Week 14 Dec 2 \- Dec 6:  
+  - [ ] Polish the overall design.
+  - [ ] Review the entire portfolio website, proofread the content, and check if the flows work.
   - [ ] FP4 due 
 
 ### *Libraries and Other Components*
@@ -178,21 +192,18 @@ List the JS libraries and other components (if applicable) that you plan to use.
 
 ## Generative AI Use Plan
 
-Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
-
 ### *Tool Use*
 
- What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
-
 * ChatGPT  
-  * I will use it for … because it can help me …  
-  * I will not use it for … because it might not be able to help me with …   
+  * I will use ChatGPT to assist in generating content for my design portfolio website, such as writing descriptions for my projects, creating engaging narratives about my design process, and formulating responses to potential user inquiries. ChatGPT can help streamline my writing process by providing suggestions and improving clarity. Moreover, I will use it for debugging. It can clarify error messages, helping me identify the root cause of problems more efficiently. Furthermore, I can have it review code snippets, gaining insights into potential inefficiencies or best practices that enhance code quality. 
+  * However, I will not use it for final edits or critical decision-making because it might not fully capture my unique voice and design intentions. I will be the one to make final edits so that I can convey my personality in the portfolio.  
 * GitHub Copilot  
-* ...
+  * I will use GitHub Copilot to enhance my coding efficiency while developing my portfolio website. It can assist me in writing code snippets, suggesting improvements, and offering real-time debugging support. This will help me learn best practices and speed up my coding process.
+  * However, I will not rely on it for comprehensive programming tasks, as it may not understand the specific context of my project or provide optimal solutions for complex problems.
 
 ### *Responsible Use*
 
-How would you use Generative AI responsibly? 
+In using Generative AI tools, I will ensure responsible use by properly citing any contributions made by these tools in my work. I recognize the importance of evaluating the outputs generated by AI before adopting them into my projects, as this will help maintain the integrity and quality of my content. Additionally, I will take full responsibility for making final decisions on both content and design, ensuring that my unique voice and vision are accurately represented in my design portfolio. 
 
 ---
 
@@ -202,7 +213,7 @@ How would you use Generative AI responsibly?
 
 ### *Idea 1: Portfolio Website*
 
-![Skethces of Portfolio Website](./images/Portfolio%20Website_Sketch.png)
+![Skethces of Portfolio Website](./images_FP1/Portfolio%20Website_Sketch.png)
 
 >What is the basic idea of your final project? (1-2 sentences) 
 
@@ -221,7 +232,7 @@ I will follow WCAG (Web Content Accessibility Guidelines) principles by using su
 I want to convey information that highlights my skills, experiences, and design philosophy. This will include a homepage, an about page detailing my background and interests, three project showcases with descriptions and visuals, and a resume page. 
 
 ### *Idea 2: Budget Tracker*
-![Skethces of Budget Tracker](./images/Budget%20Tracker_Sketch.png)
+![Skethces of Budget Tracker](./images_FP1/Budget%20Tracker_Sketch.png)
 
 >What is the basic idea of your final project? (1-2 sentences) 
 
@@ -240,7 +251,7 @@ I will use clear, high-contrast colors and large fonts for readability. Addition
 I want to include information that helps users understand their financial habits, such as an expense input area, budget settings, and a spending summary. The website will also provide a monthly or daily summary.
 
 ### *Idea 3: Emotion Diary*
-![Skethces of Emotion Diary](./images/Emotion%20Diary_Sketch.png)
+![Skethces of Emotion Diary](./images_FP1/Emotion%20Diary_Sketch.png)
 
 >What is the basic idea of your final project? (1-2 sentences) 
 
