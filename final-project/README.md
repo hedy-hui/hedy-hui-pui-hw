@@ -139,7 +139,8 @@ On the Landing Page, users appreciated the readable structure and engaging proje
 Prototype 2 differed from Prototype 1 in terms of the navigation bar. Prototype 2 has a left-side navigation bar, and users found that the black color was visually overpowering and created a sense of division across the pages. While the sidebar placement of the logo and navigation tabs was unique, participants noted that the tabs were difficult to read due to their 90-degree rotation, which made navigation less intuitive. This layout was also seen as less cohesive overall, as the bold sidebar color contrasted sharply with the rest of the page content. Users expressed a preference for the design of prototype 1 as it feels more unified and offers easier readability in navigation.
 
 ## Usability Test
-The usability test provided valuable insights into both prototypes. In Prototype 1, users appreciated the Landing Page for its readable structure, clear focus on my name, and visually engaging project images. However, they suggested clarifying project titles for better understanding and making images clickable to improve navigation. Hence, for the final design, I clarified project titles and made images clickable, allowing users to explore projects more intuitively.
+
+In Prototype 1, users appreciated the Landing Page for its readable structure, clear focus on my name, and visually engaging project images. However, they suggested clarifying project titles for better understanding and making images clickable to improve navigation. Hence, for the final design, I clarified project titles and made images clickable, allowing users to explore projects more intuitively.
 
 On the Project Page, the navigation bar and the emphasis on the "How might we" statement were positively received. Users recommended increasing the margins to prevent crowding. Therefore, I adjusted the margins from 100px to 200px across all pages, so as to improve readability for users. 
 
@@ -148,12 +149,19 @@ For the Photography Page, users appreciated how I used photos to convey how I vi
 Meanwhile, feedback on Prototype 2 was more critical, particularly regarding the left-side sidebar. Users felt that the black color was too bold and created a division across the page, drawing their attention away from the content of the page. Additionally, the 90-degree rotation of navigation tabs made them difficult to read. That's why they preferred the design of prototype 1. Hence, I decided to finalize Prototype 1 as my preferred layout for the final design, since it better supports readability, consistency, and user-friendly navigation.
 
 ## Updated Designs
+![Updated Designs](./images_FP2/Final%20Prototype.png)
 
-Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
+Based on user feedback, I decided to use top navigation for my portfolio as it is intuitive and supports smoother navigation. I kept a white background as the main color with blue accents throughout the pages to maintain a consistent, cohesive design. To enhance readability, I increased margins so the text does not spread across the entire screen, making it easier to read. For the Photography page, I organized photos in themed carousels—such as “Sunsets” and “Harbors”—to improve visual flow and add structure, allowing users to browse images more naturally while conveying a clear aesthetic. 
 
 ## Feedback Summary
 
-Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words). 
+In the lab session, one key suggestion I received was to use a circular shape for my profile picture on the homepage. This change would not only add a modern, polished look, but also draw attention to my image, creating a welcoming, personal touch. More importantly, it helps distinguish my profile picture from other images, like mockups, adding a subtle but effective visual hierarchy.
+
+Another recommendation was to update my project photos to showcase a wider variety, making the portfolio visually dynamic and giving a better sense of the range of work I have done. As per the feedback, I also revised the project descriptions to be more concise. By reducing the word count, I made each description easier to scan, which helps visitors quickly grasp the essence of each project.
+
+Furthermore, my peers also gave feedback on improving readability. For example, they recommended reducing the line height in the project titles and narrowing the text box width. I adopted these suggestions because it helps create a more visually balanced look and makes it more comfortable to read, especially on larger screens.
+
+On the About page, I considered the feedback of replacing cartoons with photos of myself or modifying the layout to make it more engaging. This would provide a more authentic representation and add a personal touch, aligning with the goal of presenting my unique identity. For the Photography page, my peer Liz suggested including a short introductory description. This addition would give viewers context for the images and enhance the narrative aspect of the page, helping to convey the themes and perspectives captured in my photography.
 
 ## Milestones
 
@@ -186,9 +194,14 @@ Summarize the feedback you received in the lab session and discuss how it influe
 
 ### *Libraries and Other Components*
 
-List the JS libraries and other components (if applicable) that you plan to use. 
-* 
+* Bideo.js
+I plan to use it to add video loops of design-related visuals or scenes relevant to my work on the landing page. This will make the landing page more visually appealing, creating a welcoming yet dynamic first impression for visitors.
 
+* Anime.js
+It is a flexible animation library that I will use to enhance interactions across the portfolio. For instance, I plan to implement smooth transitions when hovering over project images, allowing them to slightly enlarge or animate with a bounce effect. I will also use it to bring in subtle animations when loading sections, like having text fade in or slide up, which adds a sense of depth and polish without overwhelming the viewer. 
+
+* ReactJS
+I will use React components to build each section (e.g. the project gallery, photography page, and about page) for consistency and reusability. For example, the project section will leverage reusable components for displaying projects, so I can easily update the portfolio by adding new projects without modifying the entire codebase. Moreover, I will also use React to manage state, such as handling actions like toggling carousels on the photography page or expanding content areas for a more interactive experience.
 
 ## Generative AI Use Plan
 
