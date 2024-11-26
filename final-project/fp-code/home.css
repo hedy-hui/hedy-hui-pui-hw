@@ -1,108 +1,212 @@
-/* General Styles for the Home Page */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Navigation Bar */
-.navbar {
-  background-color: #222;
-  padding: 10px 20px;
+/* Custom container styles */
+.custom-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Push logo left, nav links right */
+  align-items: center; /* Center items vertically */
 }
 
-.navbar .logo img {
-  height: 40px;
-  width: auto;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
+/* Remove default list styles */
+.custom-nav {
+  display: flex; /* Align navigation links in a row */
+  list-style: none; /* Remove bullet points */
   padding: 0;
-  display: flex;
+  margin: 0;
 }
 
-.navbar ul li {
-  margin: 0 15px;
+/* Style the navigation links */
+.custom-nav .nav-item {
+  margin-left: 32px; /* Space between nav items */
 }
 
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1em;
+.custom-nav .nav-link {
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem;
+  color: #000; /* Default text color */
 }
 
-.navbar ul li a:hover {
-  text-decoration: underline;
-  color: #f1c40f;
+/* Hover effect on nav links */
+.custom-nav .nav-link:hover {
+  color: #5AACCF; /* Change color on hover */
 }
 
-/* Hero Section */
+/* Style for the logo */
+.custom-logo {
+  height: 40px;
+}
+
+/* Padding for the navbar */
+.navbar {
+  padding: 10px 0;
+  margin: 20px;
+}
+
+/* Hero Section Styling */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px 20px;
-  background-color: #f9f9f9;
+  padding: 30px 0; /* Further reduced padding for a shorter hero section */
+  background-color: #f7f7f7;
+  min-height: 300px; /* Reduced minimum height */
 }
 
 .hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
+  display: flex; /* Flexbox to align the image and text horizontally */
+  align-items: center; /* Center vertically */
+  padding-left: 30px; /* Add padding to the left to align with navbar's left edge */
 }
 
 .hero-text {
-  flex: 1;
-  padding-right: 20px;
-  text-align: left;
-}
-
-.hero-text h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
   color: #333;
 }
 
-.hero-text p {
-  font-size: 1.2em;
-  color: #555;
+.hero-text h1 {
+  font-size: 3rem; /* Slightly smaller font size */
+  font-weight: 600;
+  margin-bottom: 10px; /* Reduced margin */
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* Animation for initial text appearance */
 }
 
-.hero-image {
-  flex: 1;
-  text-align: center;
+.hero-text p {
+  font-size: 1rem; /* Smaller font size for paragraph */
+  color: #555;
+  line-height: 1.6;
 }
 
 .hero-image img {
-  max-width: 60%;
+  border-radius: 2%;
+  max-width: 50%; /* Adjusted width of the image */
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-left: 160px; /* Added margin-left to adjust image spacing */
 }
 
-/* Footer */
-footer {
-  background-color: #222;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
+/* Hover effect on the image */
+.hero-image img:hover {
+  transform: scale(1.05);
 }
 
-footer a {
-  color: #f1c40f;
+/* Animation for changing the h1 text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Create a text change effect */
+@keyframes changeText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Add the animation class for switching h1 text */
+.animated-text {
+  animation: changeText 6s infinite;
+}
+
+.animated-text::after {
+  content: " I'm a product designer.";
+  opacity: 0;
+  animation: changeText 6s infinite;
+}
+
+/* Animation delay for switching text */
+.animated-text {
+  animation-delay: 3s;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 767px) {
+  .hero-container {
+    text-align: center;
+  }
+  
+  .hero-image img {
+    max-width: 60%; /* Adjusted the image size further for mobile */
+    margin: 20px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem; /* Adjusted for smaller screens */
+  }
+
+  /* Adjust the hero section for mobile screens */
+  .hero {
+    padding: 20px 0; /* Further reduced padding */
+    min-height: 250px; /* Reduced minimum height */
+  }
+}
+
+/* Style for the Project Cards */
+.project-card {
+  width: 100%; /* Ensures cards take up full width of the container */
+  margin-bottom: 20px; /* Adds space between cards */
+  border: 1px solid #ddd; /* Adds border to cards */
+  border-radius: 8px; /* Rounds the corners of the cards */
+  transition: transform 0.3s ease; /* Adds hover effect for cards */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Style for the card image */
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 0 0 8px; /* Rounded corners for the left side */
+}
+
+/* Ensure the content inside the card is properly aligned */
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Remove default anchor styles for the card link */
+.card-link {
   text-decoration: none;
+  color: inherit; /* Inherit color for text */
 }
 
-footer a:hover {
-  text-decoration: underline;
+/* Style for the Projects Section Heading */
+.projects h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: left; /* Align the heading to the left */
+  padding-left: 30px; /* Align with content in the hero section */
+}
+
+/* Ensure the container for projects is aligned with the hero section */
+.container {
+  max-width: 1200px; /* Match the hero section width */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Optional: Adjust margins for smaller screens */
+@media (max-width: 767px) {
+  .project-card {
+    margin-bottom: 15px;
+  }
 }
