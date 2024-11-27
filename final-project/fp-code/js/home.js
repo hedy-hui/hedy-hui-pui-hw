@@ -1,6 +1,6 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scrolling for navigation links
+    // Smooth scrolling and toggler collapse for navigation links
     document.querySelectorAll('.nav-link').forEach(function (link) {
       link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -11,13 +11,19 @@
             block: 'start'
           });
         }
+
+        // Close navbar if toggler is open
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        if (navbarToggler && navbarToggler.getAttribute('aria-expanded') === 'true') {
+          navbarToggler.click();
+        }
       });
     });
 
     // Bootstrap tooltip initialization (for hover interactions)
-    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl);
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
     // Hover interaction for project cards
@@ -32,9 +38,5 @@
         this.style.transform = "scale(1)";
       });
     });
-
-    // Animate hero text
-    const heroText = document.querySelector('.hero-text h1');
-    heroText.classList.add('animate__animated', 'animate__fadeInDown');
   });
 </script>
