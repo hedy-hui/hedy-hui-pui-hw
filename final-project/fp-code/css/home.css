@@ -1,5 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Custom container styles */
@@ -43,7 +45,7 @@ body {
 /* Padding for the navbar */
 .navbar {
   padding: 10px 0;
-  margin: 20px;
+  margin: 0;
 }
 
 /* Hero Section Styling */
