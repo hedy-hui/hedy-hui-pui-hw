@@ -15,11 +15,13 @@ body {
   list-style: none; /* Remove bullet points */
   padding: 0;
   margin: 0;
+  flex-wrap: nowrap;
 }
 
 /* Style the navigation links */
 .custom-nav .nav-item {
   margin-left: 32px; /* Space between nav items */
+  white-space: nowrap;
 }
 
 .custom-nav .nav-link {
@@ -131,6 +133,10 @@ body {
 
 /* Media Queries for Mobile */
 @media (max-width: 767px) {
+    .navbar-nav {
+      justify-content: flex-end; /* Align navigation items to the right */
+    }
+  
   .hero-container {
     text-align: center;
   }
