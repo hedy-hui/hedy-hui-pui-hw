@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.hero-details h1 {
+  margin-bottom: 20px;
+}
+
+.hero-thumbnail {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Sticky Navigation Menu */
+.sticky-menu {
+  position: sticky;
+  top: 80px;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sticky-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sticky-menu ul li {
+  margin-bottom: 10px;
+}
+
+.sticky-menu ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.sticky-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Content Sections */
+.content {
+  margin-top: 40px;
+}
+
+.content h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.problems-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.problem-box {
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1; /* Ensures the boxes take up equal width */
+}
+
+.aesthetic-box {
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.functionality-box {
+  background-color: #e0e0e0; /* Slightly darker gray background */
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+  color: #333;
+}
+
+.quotes-carousel {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  font-size: 1.5em; /* Make the quotes appear bigger */
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.quote {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out; /* Slower fade-in and fade-out */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateY(10px); /* Slightly adjust the vertical position for smooth transition */
+}
+
+.quote.fade-in {
+  display: block;
+  opacity: 1;
+  transform: translateY(0); /* Restore to original position when appearing */
+}
+
+.quote.fade-out {
+  opacity: 0;
+  transform: translateY(-10px); /* Move it slightly up when disappearing */
+}
+
+.dots-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb; /* Light gray for inactive dots */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and size */
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #000; /* Black for active dot */
+  transform: scale(1.2); /* Slightly enlarge the active dot */
+}
+
+.dot:hover {
+  background-color: #555; /* Dark gray for hover state */
+  transform: scale(1.3); /* Slight enlargement when hovered */
+}
