@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hedy's Portfolio</title>
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="./css/home.css">
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -16,17 +16,18 @@
       <a class="navbar-brand" href="home.html">
         <img src="./assets/Logo.png" alt="Logo" class="custom-logo">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         </ul>
       </div>
     </div>
-  </nav> 
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
@@ -51,7 +52,7 @@
 
   <!-- Projects Section -->
   <section class="projects">
-    <div class="container">
+    <div class="project-container">
       <!-- My Projects Heading -->
       <h2>My Projects</h2>
 
@@ -61,12 +62,22 @@
           <a href="project1.html" class="card-link">
             <div class="card project-card">
               <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="project1.jpg" alt="Project 1" class="card-img">
+                <!-- Image half of the card -->
+                <div class="col-md-6">
+                  <img src="./assets/project1/project1-thumbnail.png" alt="Project 1 thumbnail" class="card-img">
                 </div>
-                <div class="col-md-8">
+
+                <!-- Card content (heading, description, and labels) -->
+                <div class="col-md-6">
                   <div class="card-body">
-                    <h5 class="card-title">Project Title 1</h5>
+                    <h3 class="card-title">CPII ChatDoc Master</h3>
+                    <p class="card-description">B2B solution for creating customized chatbots</p>
+
+                    <!-- Labels below the description -->
+                    <div class="card-tags">
+                      <span class="label label-blue">WEB REDESIGN</span>
+                      <span class="label label-blue">DESIGN SYSTEM</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -78,38 +89,56 @@
       <!-- Project Card 2 -->
       <div class="row">
         <div class="col-md-12">
-            <div class="card project-card">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="project2.jpg" alt="Project 2" class="card-img">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Project Title 2</h5>
+          <div class="card project-card">
+            <div class="row no-gutters">
+              <!-- Image half of the card -->
+              <div class="col-md-6">
+                <img src="./assets/project2-thumbnail.jpg" alt="Project 2 thumbnail" class="card-img">
+              </div>
+
+              <!-- Card content (heading, description, and labels) -->
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h3 class="card-title">LeaveHomeSafe</h3>
+                  <p class="card-description">COVID-19 contact tracing app</p>
+
+                  <!-- Labels below the description -->
+                  <div class="card-tags">
+                    <span class="label label-green">APP DESIGN</span>
+                    <span class="label label-green">UX RESEARCH</span>
                   </div>
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
 
       <!-- Project Card 3 -->
       <div class="row">
         <div class="col-md-12">
-            <div class="card project-card">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="project3.jpg" alt="Project 3" class="card-img">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Project Title 3</h5>
+          <div class="card project-card">
+            <div class="row no-gutters">
+              <!-- Image half of the card -->
+              <div class="col-md-6">
+                <img src="./assets/Astra.jpg" alt="Project 3 thumbnail" class="card-img">
+              </div>
+
+              <!-- Card content (heading, description, and labels) -->
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h3 class="card-title">Astra</h3>
+                  <p class="card-description">Snack-ordering app for movie theater</p>
+
+                  <!-- Labels below the description -->
+                  <div class="card-tags">
+                    <span class="label label-beige">APP DESIGN</span>
+                    <span class="label label-beige">INTERACTION DESIGN</span>
                   </div>
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>

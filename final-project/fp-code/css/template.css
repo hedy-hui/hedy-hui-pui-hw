@@ -5,6 +5,7 @@ body {
   padding: 0;
 }
 
+/* Navigation Bar */
 .navbar {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
@@ -24,12 +25,12 @@ body {
   height: 40px;
 }
 
-/* Navigation Links */
 .navbar-nav {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  justify-content: flex-end; 
 }
 
 .navbar-nav .nav-item {
@@ -94,20 +95,16 @@ body {
 .sticky-menu {
   position: sticky;
   top: 80px;
-  /* Adjust for navbar height */
   padding: 15px;
   border-right: 1px solid #ddd;
   height: calc(100vh - 80px);
-  /* Full height minus navbar */
   overflow-y: auto;
-  /* Scrollable if content overflows */
 }
 
 .sticky-menu .sticky-menu-link {
   font-size: 1em;
   color: #4FA0FF;
   margin-bottom: 20px;
-  /* Add space between links */
 }
 
 .sticky-menu .sticky-menu-link:hover {
@@ -118,7 +115,7 @@ body {
 /* Content Sections */
 .content {
   display: flex;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .content-main {
@@ -126,7 +123,6 @@ body {
 }
 
 .content h2 {
-  margin-top: 20px;
   padding-bottom: 5px;
   font-weight: bold;
 }
@@ -142,24 +138,23 @@ p {
 }
 
 #overview, #problems, #research, #opportunity, #solutions {
-  margin-bottom: 60px; /* Increased space between sections */
-  border-bottom: 1px solid #d3d3d3; /* Light gray border at the bottom */
-  padding-bottom: 60px; /* Space between content and border */
+  margin-bottom: 80px;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 80px;
+  scroll-margin-top: 120px; 
 }
 
-#takeaways {
-  margin-bottom: 120px; /* Increased space between sections */
+/* Problem Section */
+#problems-content {
+ margin-bottom: 40px;
 }
 
-/* Containers for Aesthetics and Functionality */
 .container-problem {
   background-color: #EBECF0;
-  /* Light background for contrast */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   height: 100%;
-  /* Make containers take up full height of their parent */
 }
 
 .container-problem h3 {
@@ -173,34 +168,32 @@ p {
   line-height: 1.5;
 }
 
-/* Style for the research subsections */
+/* Research Section */
 .container-style {
   background-color: rgba(222, 235, 255, 0.5);
   border-radius: 15px;
-  padding: 30px;
+  padding: 20px 30px 20px 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .container-style p {
   color: #333;
-  /* Text color for paragraphs */
 }
 
 .container-style .fw-bold {
   font-weight: bold;
-  /* Ensure the font-weight is bold */
 }
 
 .container-style .fs-5 {
   font-size: 1.2rem;
-  /* Adjust font size for headers */
 }
 
 #quote-text {
   font-size: 1.5rem;
-  color: #80BBFF; /* Initial lighter blue color */
+  color: #80BBFF;
   opacity: 1;
-  transition: opacity 1s ease-in-out, color 1s ease-in-out; /* Added color transition */
+  transition: opacity 1s ease-in-out, color 1s ease-in-out;
+  margin-bottom: 30px;
 }
 
 #quote-container {
@@ -216,8 +209,14 @@ p {
 }
 
 .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
   opacity: 1;
-  transition: opacity 1s ease-in-out;
+  transform: translateY(0);
 }
 
 .transition-opacity {
@@ -232,16 +231,14 @@ p {
   opacity: 1;
 }
 
+/* Opportunity Section */
 #opportunity p {
   color: #80BBFF;
-  /* Make the text blue */
   font-size: 1.5em;
-  /* Make the text bigger */
   font-weight: 600;
-  /* Make the text bold */
 }
 
-/* Carousel Styles */
+/* Solutions Section */
 .carousel {
   position: relative;
   margin-top: 20px;
@@ -265,18 +262,14 @@ p {
   overflow: hidden;
 }
 
-/* Create a container for both the video caption and arrows */
+/* Container for both the video caption and arrows */
 .caption-container {
   display: flex;
   justify-content: space-between;
-  /* Ensure caption and arrows are spaced out */
   align-items: center;
-  /* Vertically center content */
   margin-top: 20px;
-  /* Space between video and caption/arrows */
   margin-bottom: 20px;
   padding: 0 15px;
-  /* Add padding for spacing */
   position: relative;
 }
 
@@ -285,51 +278,130 @@ p {
   color: #333;
   padding: 0 15px;
   flex-grow: 1;
-  /* Allow the caption to take up available space */
   text-align: center;
-  /* Ensure caption is centered horizontally */
   margin: 0;
 }
 
-/* Position custom arrows correctly */
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-prev, .carousel-control-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
-  /* Larger arrows */
   z-index: 1;
   width: 30px;
-  /* Adjust width */
   height: 30px;
-  /* Adjust height */
 }
 
-/* Style the arrows (ensure they're gray by default) */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.carousel-control-prev-icon, .carousel-control-next-icon {
   display: block;
   width: 100%;
   height: 100%;
   background-color: transparent;
-  /* Make sure there's no background color */
 }
 
-/* Hover effect for arrows */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+.carousel-control-prev:hover, .carousel-control-next:hover {
   opacity: 0.7;
-  /* Darker arrows on hover */
 }
 
-/* Position left and right arrows */
 .carousel-control-prev {
   left: 10px;
-  /* Position left arrow */
 }
 
 .carousel-control-next {
   right: 10px;
-  /* Position right arrow */
+}
+
+/* Takeaways Section */
+#takeaways {
+  margin-bottom: 120px;
+  scroll-margin-top: 120px; 
+}
+
+/* Scrolling Effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+section.visible {
+  opacity: 1;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Responsiveness for smaller screens */
+/* Hide sticky menu */
+@media (max-width: 767px) {
+  .sticky-menu {
+    display: none; 
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 30px 15px; 
+  }
+
+  #project-title {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+
+  .img-fluid {
+    max-width: 100%; 
+    height: auto;
+  }
+}
+
+/* Adjust the layout of the main content */
+@media (max-width: 767px) {
+  .col-md-3, .col-md-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .container-problem {
+    margin-bottom: 15px;
+  }
+}
+
+/* Make carousel images responsive */
+@media (max-width: 767px) {
+  .carousel-inner img {
+    width: 100%;
+  }
+}
+
+/* Adjust navbar */
+@media (max-width: 767px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none; 
+  }
+
+  .navbar-toggler.collapsed + .navbar-collapse {
+    display: block; 
+  }
 }

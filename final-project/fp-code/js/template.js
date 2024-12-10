@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Identify which project file to load based on the current page
   const currentPath = window.location.pathname;
   if (currentPath.includes("project1")) {
-    projectFile = "../data/project1.js"; // Adjusted path
+    projectFile = "../data/project1.js"; 
   }
 
   if (projectFile) {
@@ -43,25 +43,25 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Container 1: User Interviews
     const container1 = document.createElement("div");
-    container1.classList.add("container-style", "mb-4");  // Apply container-style class for styling
+    container1.classList.add("container-style", "mb-4");  
 
     const userInterviewsHeader = document.createElement("p");
-    userInterviewsHeader.classList.add("fw-bold", "fs-5");  // Bold and slightly bigger font size
+    userInterviewsHeader.classList.add("fw-bold", "fs-5");  
     userInterviewsHeader.innerText = "User Interviews";
 
     const userInterviewsContent = document.createElement("p");
     userInterviewsContent.innerText = "I interviewed 7 users to identify pain points in CPII ChatDoc Master’s early design.";
 
-    const feedbackLabel = document.createElement("p"); // Create "User feedback:" label
+    const feedbackLabel = document.createElement("p"); 
     feedbackLabel.classList.add("fs-6");
     feedbackLabel.innerText = "User feedback:";
 
     const quotesContainer = document.createElement("div");
 
     const quotes = [
-      { text: "The best way to predict the future is to invent it.", color: "#80BBFF" }, // Light Blue
-      { text: "Design is not just what it looks like, but how it works.", color: "#BB9BFF" }, // Purple
-      { text: "Simplicity is the ultimate sophistication.", color: "#5A82C6" } // Light Teal
+      { text: "The best way to predict the future is to invent it.", color: "#80BBFF" }, 
+      { text: "Design is not just what it looks like, but how it works.", color: "#BB9BFF" }, 
+      { text: "Simplicity is the ultimate sophistication.", color: "#5A82C6" } 
     ];
 
     let currentIndex = 0;
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     quotesContainer.appendChild(quoteText);
 
     function switchQuote() {
-      // First, fade out the current quote
+      // Fade out the current quote
       quoteText.classList.add("fade-out");
 
       // After the fade-out completes (500ms), change the quote
@@ -87,26 +87,26 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Fade in the new quote
         quoteText.classList.remove("fade-out");
         quoteText.classList.add("fade-in");
-      }, 500); // Timeout duration matches the fade-out transition time
+      }, 500); 
     }
 
     // Initialize the first quote with fade-in
     quoteText.textContent = quotes[currentIndex].text;
-    quoteText.style.color = quotes[currentIndex].color; // Set initial color for first quote
+    quoteText.style.color = quotes[currentIndex].color; 
     quoteText.classList.add("fade-in");
 
     // Switch quotes every 3 seconds
-    setInterval(switchQuote, 3000); // Increased duration to allow better visibility
+    setInterval(switchQuote, 3000); 
 
     // Append all content to container1
     container1.appendChild(userInterviewsHeader);
     container1.appendChild(userInterviewsContent);
-    container1.appendChild(feedbackLabel); // Add the feedback label
+    container1.appendChild(feedbackLabel); 
     container1.appendChild(quotesContainer);
 
     // Container 2: Usability Testing
     const container2 = document.createElement("div");
-    container2.classList.add("container-style", "mb-4");  // Apply container-style class for styling
+    container2.classList.add("container-style", "mb-4");  
 
     const usabilityTestingHeader = document.createElement("p");
     usabilityTestingHeader.classList.add("fw-bold", "fs-5");
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Container 3: Competitive Analysis
     const container3 = document.createElement("div");
-    container3.classList.add("container-style", "mb-4");  // Apply container-style class for styling
+    container3.classList.add("container-style", "mb-4");  
 
     const competitiveAnalysisHeader = document.createElement("p");
     competitiveAnalysisHeader.classList.add("fw-bold", "fs-5");
@@ -142,8 +142,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     researchSection.appendChild(container3);
 
     // Add the text directly below the 3 containers
-    const researchText = document.createElement("p");  // Just use a <p> element for the text
-    researchText.innerText = data.sections.research;  // Using the research section text
+    const researchText = document.createElement("p");  
+    researchText.innerText = data.sections.research;  
 
     // Append the <p> directly to the research section
     researchSection.appendChild(researchText);
@@ -152,4 +152,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("opportunity-content").innerText = data.sections.opportunity;
     document.getElementById("takeaways-content").innerText = data.sections.takeaways;
   }
+});
+
+// Set up Intersection Observer to detect when elements come into view
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll('.fade-in'); 
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible'); 
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  // Start observing each section
+  sections.forEach(section => {
+    observer.observe(section);
+  });
 });

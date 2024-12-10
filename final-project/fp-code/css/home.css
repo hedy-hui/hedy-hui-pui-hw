@@ -1,35 +1,36 @@
+/* General Styles */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Update navbar styling to match the template CSS */
+/* Navigation Bar */
 .navbar {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 0; /* Same padding as in template CSS */
+  padding: 10px 0;
   background-color: #fff;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-between; /* Align logo to the left, nav items to the right */
+  justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* Padding for navbar container */
+  padding: 0 20px;
 }
 
 .navbar-logo {
   height: 40px;
 }
 
-/* For navigation links */
 .navbar-nav {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  justify-content: flex-end;
 }
 
 .navbar-nav .nav-item {
@@ -43,7 +44,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #5AACCF; /* Hover color */
+  color: #5AACCF;
 }
 
 /* Hero Section */
@@ -55,9 +56,9 @@ body {
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex; /* Flexbox to align the image and text horizontally */
-  align-items: center; /* Center vertically */
-  padding-left: 30px; /* Add padding to the left to align with navbar's left edge */
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 
 .hero-text {
@@ -65,25 +66,25 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 3rem; /* Slightly smaller font size */
+  font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 10px; /* Reduced margin */
+  margin-bottom: 10px;
   opacity: 0;
-  animation: fadeIn 2s forwards; /* Animation for initial text appearance */
+  animation: fadeIn 2s forwards;
 }
 
 .hero-text p {
-  font-size: 1rem; /* Smaller font size for paragraph */
+  font-size: 1rem;
   color: #555;
   line-height: 1.6;
 }
 
 .hero-image img {
   border-radius: 2%;
-  max-width: 50%; /* Adjusted width of the image */
+  max-width: 50%;
   height: auto;
   transition: transform 0.3s ease;
-  margin-left: 160px; /* Added margin-left to adjust image spacing */
+  margin-left: 160px;
 }
 
 /* Hover effect on the image */
@@ -96,25 +97,28 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-/* Create a text change effect */
+/* Text change effect */
 @keyframes changeText {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-/* Add the animation class for switching h1 text */
+/* Animation class for switching h1 text */
 .animated-text {
   animation: changeText 6s infinite;
 }
@@ -132,86 +136,171 @@ body {
 
 /* Media Queries for Mobile */
 @media (max-width: 767px) {
-    .navbar-nav {
-      justify-content: flex-end; /* Align navigation items to the right */
-    }
-  
+  .navbar-nav {
+    justify-content: flex-end;
+    /* Align navigation items to the right */
+  }
+
   .hero-container {
     text-align: center;
   }
-  
+
   .hero-image img {
-    max-width: 60%; /* Adjusted the image size further for mobile */
+    max-width: 60%;
     margin: 20px 0;
   }
 
   .hero-text h1 {
-    font-size: 1.8rem; /* Adjusted for smaller screens */
+    font-size: 1.8rem;
   }
 
   /* Adjust the hero section for mobile screens */
   .hero {
-    padding: 20px 0; /* Further reduced padding */
-    min-height: 250px; /* Reduced minimum height */
+    padding: 20px 0;
+    min-height: 250px;
   }
 }
 
-/* Style for the Project Cards */
-.project-card {
-  width: 100%; /* Ensures cards take up full width of the container */
-  margin-bottom: 20px; /* Adds space between cards */
-  border: 1px solid #ddd; /* Adds border to cards */
-  border-radius: 8px; /* Rounds the corners of the cards */
-  transition: transform 0.3s ease; /* Adds hover effect for cards */
+/* Project Section */
+.projects {
+  padding-left: 0;
 }
 
-.project-card:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Style for the card image */
-.card-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px 0 0 8px; /* Rounded corners for the left side */
-}
-
-/* Ensure the content inside the card is properly aligned */
-.card-body {
-  padding: 20px;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Remove default anchor styles for the card link */
-.card-link {
-  text-decoration: none;
-  color: inherit; /* Inherit color for text */
-}
-
-/* Style for the Projects Section Heading */
 .projects h2 {
   font-size: 2rem;
   font-weight: 600;
   color: #333;
-  margin-bottom: 20px; /* Space below the heading */
-  text-align: left; /* Align the heading to the left */
-  padding-left: 30px; /* Align with content in the hero section */
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 0;
 }
 
-/* Ensure the container for projects is aligned with the hero section */
-.container {
-  max-width: 1200px; /* Match the hero section width */
-  margin: 0 auto; /* Center the container */
+/* Project Cards */
+.project-card {
+  width: 100%;
+  max-width: 800px; 
+  height: 300px;  
+  margin-bottom: 60px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  flex-direction: row;
+  border-radius: 10px;
+  display: flex;
+  align-items: stretch;  
 }
 
-/* Optional: Adjust margins for smaller screens */
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Card Image */
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card-tags {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.label {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Label Color Schemes */
+.label-blue {
+  background-color: #DEEBFF;
+  color: #0d68d0;
+  border: 1px solid #add1fb;
+}
+
+.label-green {
+  background-color: #e6f7e6;
+  color: #4CAF50;
+  border: 1px solid #81C784;
+}
+
+.label-beige {
+  background-color: #FFF5E6;
+  color: #FF9800;
+  border: 1px solid #FFB74D;
+}
+
+/* Hover effects for labels */
+.label:hover {
+  background-color: #ddd;
+}
+
+/* Project Card Hover Effect */
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsiveness for smaller screens */
 @media (max-width: 767px) {
   .project-card {
+    flex-direction: column; 
     margin-bottom: 15px;
+    width: 100%; 
+  }
+
+  .card-img {
+    height: 200px; 
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
+  }
+
+  .card-tags {
+    flex-wrap: wrap;
+    gap: 5px;
   }
 }

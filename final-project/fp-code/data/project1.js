@@ -6,8 +6,8 @@ export default {
     tools: "Figma",
     platform: "Desktop web",
     team: ["Philip Liu", "Mengjie Li", "Zhantong Xue", "Dang Long", "Ka Hei Cheng"],
-    skills: ["User research", "Web design", "Interaction design", "Design system", "Prototyping", "Usability testing"],
-    image: "./assets/project1/project1-thumbnail.png" // Relative path to the thumbnail image
+    skills: ["User research", "web design", "interaction design", "design system", "prototyping", "usability testing"],
+    image: "./assets/project1/project1-thumbnail.png" 
   },
   sections: {
     overview: "CPII ChatDoc Master is a no-code B2B AI tool that generates conversational chatbots by parsing uploaded websites and PDFs. It enables businesses to build customized chatbots for seamless integration into their websites. As CPII ChatDoc Master was initially a rudimentary research tool with a simple design, I redesigned and enhanced it with new features, turning it into a market-ready solution for business adoption.",
