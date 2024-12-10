@@ -1,14 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Smooth scrolling for navigation links
+  // Smooth scrolling for navigation links, except when going to another page
   document.querySelectorAll('.nav-link').forEach(function (link) {
     link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
+      const href = this.getAttribute('href');
+      if (href.startsWith('#')) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       }
     });
   });

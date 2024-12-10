@@ -46,3 +46,39 @@ body {
 .navbar-nav .nav-link:hover {
   color: #5AACCF;
 }
+
+/* Hero Section */
+.hero-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero-section img {
+  max-width: 60%; 
+  height: auto;
+  border-radius: 2%;
+  transition: transform 0.3s ease; 
+}
+
+.hero-section img:hover {
+  transform: scale(1.05); 
+}
+
+/* Carousel Section */
+.carousel-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.carousel-inner img {
+  height: 600px; 
+  object-fit: cover; 
+}
+
+.carousel-indicators li {
+  background-color: #333; 
+}
+
+.carousel-indicators .active {
+  background-color: #000; 
+}

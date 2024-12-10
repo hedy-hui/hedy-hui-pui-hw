@@ -138,7 +138,6 @@ body {
 @media (max-width: 767px) {
   .navbar-nav {
     justify-content: flex-end;
-    /* Align navigation items to the right */
   }
 
   .hero-container {
@@ -253,10 +252,18 @@ body {
   border: 1px solid #add1fb;
 }
 
+.label-blue:hover {
+  background-color: #adceff;
+}
+
 .label-green {
   background-color: #e6f7e6;
   color: #4CAF50;
   border: 1px solid #81C784;
+}
+
+.label-green:hover {
+  background-color: #c1f5c1;;
 }
 
 .label-beige {
@@ -265,9 +272,8 @@ body {
   border: 1px solid #FFB74D;
 }
 
-/* Hover effects for labels */
-.label:hover {
-  background-color: #ddd;
+.label-beige:hover {
+  background-color: #fce3bd;;
 }
 
 /* Project Card Hover Effect */
