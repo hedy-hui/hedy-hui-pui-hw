@@ -5,64 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Template | Hedy's Portfolio</title>
-  <link rel="stylesheet" href="./css/template.css">
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/template.css">
 </head>
 
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#home">
+      <a class="navbar-brand" href="home.html">
         <img src="./assets/Logo.png" alt="Logo" class="custom-logo">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero bg-light">
     <div class="container">
       <div class="row align-items-center">
-        <!-- Left Content -->
-        <div class="col-md-6 hero-details">
-          <h1 id="project-title"></h1>
-          <div class="row">
-            <div class="col-6">
-              <p><strong>Role:</strong></p>
-              <p id="project-role"></p>
-              <p><strong>Timeline:</strong></p>
-              <p id="project-timeline"></p>
-            </div>
-            <div class="col-6">
-              <p><strong>Tool:</strong></p>
-              <p id="project-tools"></p>
-              <p><strong>Platform:</strong></p>
-              <p id="project-platform"></p>
-            </div>
-            <div class="col-6">
-              <p><strong>Team:</strong></p>
-              <p id="project-team"></p>
-            </div>
-            <div class="col-6">
-              <p><strong>Skills:</strong></p>
-              <p id="project-skills"></p>
-            </div>
-          </div>
+        <div class="col-md-6">
+          <h1 id="project-title" class="display-4"></h1>
+          <p><strong>Role:</strong> <span id="project-role"></span></p>
+          <p><strong>Timeline:</strong> <span id="project-timeline"></span></p>
+          <p><strong>Tools:</strong> <span id="project-tools"></span></p>
+          <p><strong>Platform:</strong> <span id="project-platform"></span></p>
+          <p><strong>Team:</strong> <span id="project-team"></span></p>
+          <p><strong>Skills:</strong> <span id="project-skills"></span></p>
         </div>
-        <!-- Right Thumbnail -->
         <div class="col-md-6 text-center">
-          <img id="project-image" src="#" alt="Project Thumbnail" class="img-fluid hero-thumbnail">
+          <img id="project-image" src="#" alt="Project Thumbnail" class="img-fluid rounded">
         </div>
       </div>
     </div>
@@ -70,47 +52,135 @@
 
   <!-- Body Section -->
   <section class="content">
-    <div class="container">
+    <div class="container mt-4">
       <div class="row">
-        <!-- Sticky Navigation Menu -->
-        <div class="col-md-3 sticky-menu">
-          <ul class="nav flex-column">
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#problems">Problems</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#takeaways">Takeaways</a></li>
-          </ul>
+        <!-- Sticky Menu Column (Bootstrap 4 Grid) -->
+        <div class="col-md-3">
+          <div class="sticky-menu">
+            <nav class="navbar-nav">
+              <a href="#overview" class="sticky-menu-link">Overview</a>
+              <a href="#problems" class="sticky-menu-link">Problems</a>
+              <a href="#research" class="sticky-menu-link">Research</a>
+              <a href="#opportunity" class="sticky-menu-link">Opportunity</a>
+              <a href="#solutions" class="sticky-menu-link">Solutions</a>
+              <a href="#takeaways" class="sticky-menu-link">Takeaways</a>
+            </nav>
+          </div>
         </div>
-        <!-- Content Sections -->
+
+        <!-- Main Content Column (Bootstrap 4 Grid) -->
         <div class="col-md-9">
-          <section id="overview">
-            <h2>Overview</h2>
-            <p id="overview-content"></p>
-          </section>
-          <section id="problems">
-            <h2>Problems</h2>
-            <p id="problems-content"></p>
-            <div class="problems-container">
-              <!-- Dynamic content will be injected here by JS -->
-            </div>
-          </section>
-          <section id="research">
-            <h2>Research</h2>
-            <p id="research-content"></p>
-          </section>
-          <section id="solutions">
-            <h2>Solutions</h2>
-            <p id="solutions-content"></p>
-          </section>
-          <section id="takeaways">
-            <h2>Takeaways</h2>
-            <p id="takeaways-content"></p>
-          </section>          
+          <div class="content-main">
+            <section id="overview">
+              <h2>Overview</h2>
+              <p id="overview-content"></p>
+            </section>
+            <section id="problems">
+              <h2>Problems</h2>
+              <p id="problems-content"></p>
+              <div class="row">
+                <!-- Aesthetics Container -->
+                <div class="col-md-6">
+                  <div class="container-problem" id="aesthetics-container">
+                    <h3>Aesthetics</h3>
+                    <p id="aesthetics-description">The old design lacked a polished interface and a visual hierarchy.
+                    </p>
+                  </div>
+                </div>
+                <!-- Functionality Container -->
+                <div class="col-md-6">
+                  <div class="container-problem" id="functionality-container">
+                    <h3>Functionality</h3>
+                    <p id="functionality-description">The old design supported one user flow only – to generate a
+                      chatbot by uploading a website or a PDF.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="research">
+              <h2>Research</h2>
+              <p id="research-content"></p>
+              <div id="quote-container">
+                <div id="quote-text" class="text-center fw-bold fs-4"></div>
+              </div>
+            </section>
+            <section id="opportunity">
+              <h2>Opportunity</h2>
+              <p id="opportunity-content"></p>
+            </section>
+            <section id="solutions">
+              <h2>Solutions</h2>
+              <!-- Carousel Section -->
+              <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                  <!-- Video 1 -->
+                  <div class="carousel-item active">
+                    <div class="video-container">
+                      <video class="d-block w-100" autoplay muted loop id="video1">
+                        <source src="./assets/project1/create-chatbot.mov" type="video/mp4">
+                      </video>
+                      <div class="caption-container">
+                        <p class="video-caption">Users can upload websites or PDF files to create chatbots.</p>
+                        <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                          <img class="carousel-control-prev-icon" src="assets/project1/caret-left-fill.svg"
+                            alt="Previous">
+                        </a>
+                        <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                          <img class="carousel-control-next-icon" src="assets/project1/caret-right-fill.svg" alt="Next">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Video 2 -->
+                  <div class="carousel-item">
+                    <div class="video-container">
+                      <video class="d-block w-100" autoplay muted loop id="video2">
+                        <source src="./assets/project1/chat.mov" type="video/mp4">
+                      </video>
+                      <div class="caption-container">
+                        <p class="video-caption">Users can ask chatbots questions about the uploaded documents.</p>
+                        <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                          <img class="carousel-control-prev-icon" src="assets/project1/caret-left-fill.svg"
+                            alt="Previous">
+                        </a>
+                        <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                          <img class="carousel-control-next-icon" src="assets/project1/caret-right-fill.svg" alt="Next">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Video 3 -->
+                  <div class="carousel-item">
+                    <div class="video-container">
+                      <video class="d-block w-100" autoplay muted loop id="video3">
+                        <source src="./assets/project1/update-chatbot.mov" type="video/mp4">
+                      </video>
+                      <div class="caption-container">
+                        <p class="video-caption">Users can update the data sources of chatbots.</p>
+                        <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                          <img class="carousel-control-prev-icon" src="assets/project1/caret-left-fill.svg"
+                            alt="Previous">
+                        </a>
+                        <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                          <img class="carousel-control-next-icon" src="assets/project1/caret-right-fill.svg" alt="Next">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="takeaways">
+              <h2>Takeaways</h2>
+              <p id="takeaways-content"></p>
+            </section>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- Bootstrap JS (at the end of body to ensure DOM is loaded first) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

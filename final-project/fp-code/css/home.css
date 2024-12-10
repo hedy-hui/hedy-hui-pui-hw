@@ -4,55 +4,52 @@ body {
   padding: 0;
 }
 
-/* Custom container styles */
-.custom-container {
+/* Update navbar styling to match the template CSS */
+.navbar {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0; /* Same padding as in template CSS */
+  background-color: #fff;
+}
+
+.navbar-container {
   display: flex;
-  justify-content: space-between; /* Push logo left, nav links right */
-  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Align logo to the left, nav items to the right */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Padding for navbar container */
 }
 
-/* Remove default list styles */
-.custom-nav {
-  display: flex; /* Align navigation links in a row */
-  list-style: none; /* Remove bullet points */
-  padding: 0;
-  margin: 0;
-  flex-wrap: nowrap;
-}
-
-/* Style the navigation links */
-.custom-nav .nav-item {
-  margin-left: 32px; /* Space between nav items */
-  white-space: nowrap;
-}
-
-.custom-nav .nav-link {
-  text-decoration: none; /* Remove underline */
-  font-size: 1rem;
-  color: #000; /* Default text color */
-}
-
-/* Hover effect on nav links */
-.custom-nav .nav-link:hover {
-  color: #5AACCF; /* Change color on hover */
-}
-
-/* Style for the logo */
-.custom-logo {
+.navbar-logo {
   height: 40px;
 }
 
-/* Padding for the navbar */
-.navbar {
-  padding: 10px 0;
+/* For navigation links */
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-/* Hero Section Styling */
+.navbar-nav .nav-item {
+  margin-left: 32px;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5AACCF; /* Hover color */
+}
+
+/* Hero Section */
 .hero {
-  padding: 30px 0; /* Further reduced padding for a shorter hero section */
-  background-color: #f7f7f7;
-  min-height: 300px; /* Reduced minimum height */
+  padding: 60px 0;
+  background-color: #f9f9f9;
 }
 
 .hero-container {

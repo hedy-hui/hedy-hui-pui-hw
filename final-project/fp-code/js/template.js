@@ -3,14 +3,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Identify which project file to load based on the current page
   const currentPath = window.location.pathname;
-  console.log("Current Path:", currentPath); // Debugging
   if (currentPath.includes("project1")) {
     projectFile = "../data/project1.js"; // Adjusted path
   }
 
   if (projectFile) {
     try {
-      console.log("Attempting to load:", projectFile); // Debugging
       const { default: projectData } = await import(projectFile);
       renderPage(projectData);
     } catch (error) {
@@ -36,90 +34,122 @@ document.addEventListener("DOMContentLoaded", async () => {
     heroImage.src = data.heroDetails.image;
     heroImage.alt = `Thumbnail image for ${data.title}`;
 
-    // Update sections
+    // Update other sections
     document.getElementById("overview-content").innerText = data.sections.overview;
     document.getElementById("problems-content").innerText = data.sections.problems;
-    document.getElementById("research-content").innerText = data.sections.research;
-    document.getElementById("solutions-content").innerText = data.sections.solutions;
-    document.getElementById("takeaways-content").innerText = data.sections.takeaways;
 
-    // Adding quotes carousel to the research section
+    // Set up the research section with 3 containers
+    const researchSection = document.getElementById("research");
+
+    // Container 1: User Interviews
+    const container1 = document.createElement("div");
+    container1.classList.add("container-style", "mb-4");  // Apply container-style class for styling
+
+    const userInterviewsHeader = document.createElement("p");
+    userInterviewsHeader.classList.add("fw-bold", "fs-5");  // Bold and slightly bigger font size
+    userInterviewsHeader.innerText = "User Interviews";
+
+    const userInterviewsContent = document.createElement("p");
+    userInterviewsContent.innerText = "I interviewed 7 users to identify pain points in CPII ChatDoc Master’s early design.";
+
+    const feedbackLabel = document.createElement("p"); // Create "User feedback:" label
+    feedbackLabel.classList.add("fs-6");
+    feedbackLabel.innerText = "User feedback:";
+
     const quotesContainer = document.createElement("div");
-    quotesContainer.classList.add("quotes-carousel");
 
     const quotes = [
-      "“The interface is cluttered; it’s hard to know where to focus.”",
-      "“There’s no visual hierarchy, making it confusing to navigate.”",
-      "“I’d like more customization options for the chatbot.”"
+      { text: "The best way to predict the future is to invent it.", color: "#80BBFF" }, // Light Blue
+      { text: "Design is not just what it looks like, but how it works.", color: "#BB9BFF" }, // Purple
+      { text: "Simplicity is the ultimate sophistication.", color: "#5A82C6" } // Light Teal
     ];
 
-    quotes.forEach((quote, index) => {
-      const quoteDiv = document.createElement("div");
-      quoteDiv.classList.add("quote");
-      quoteDiv.innerText = quote;
-      quotesContainer.appendChild(quoteDiv);
-    });
-
-    // Insert the quotes container into the page
-    document.getElementById("research-content").appendChild(quotesContainer);
-
-    // Create dots for quote navigation
-    const dotsContainer = document.createElement("div");
-    dotsContainer.classList.add("dots-container");
-
-    quotes.forEach((_, index) => {
-      const dot = document.createElement("span");
-      dot.classList.add("dot");
-      dot.dataset.index = index;
-      dotsContainer.appendChild(dot);
-    });
-
-    quotesContainer.appendChild(dotsContainer);
-
     let currentIndex = 0;
-    const quoteElements = document.querySelectorAll(".quotes-carousel .quote");
-    const dotElements = document.querySelectorAll(".dots-container .dot");
+    const quoteText = document.createElement("div");
+    quoteText.id = "quote-text";
+    quoteText.classList.add("text-center", "fw-bold", "fs-4");
+    quotesContainer.appendChild(quoteText);
 
-    // Function to change the visible quote with fade-in and fade-out animation
-    function showQuote(index) {
-      quoteElements.forEach((quote, i) => {
-        if (i === index) {
-          quote.classList.add("fade-in");
-          quote.classList.remove("fade-out");
-          quote.style.display = "block";
-        } else {
-          quote.classList.add("fade-out");
-          quote.classList.remove("fade-in");
-          setTimeout(() => {
-            quote.style.display = "none";
-          }, 1000); // Delay hiding for smoother fade-out
-        }
-      });
+    function switchQuote() {
+      // First, fade out the current quote
+      quoteText.classList.add("fade-out");
 
-      dotElements.forEach((dot, i) => {
-        if (i === index) {
-          dot.classList.add("active");
-        } else {
-          dot.classList.remove("active");
-        }
-      });
+      // After the fade-out completes (500ms), change the quote
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % quotes.length; // Update the index
+        quoteText.textContent = quotes[currentIndex].text;
+
+        // Change the color based on the current quote
+        quoteText.style.color = quotes[currentIndex].color;
+
+        quoteText.style.fontStyle = "italic";
+
+        // Fade in the new quote
+        quoteText.classList.remove("fade-out");
+        quoteText.classList.add("fade-in");
+      }, 500); // Timeout duration matches the fade-out transition time
     }
 
-    // Automatically switch quotes every 5 seconds
-    setInterval(() => {
-      currentIndex = (currentIndex + 1) % quotes.length;
-      showQuote(currentIndex);
-    }, 5000);
+    // Initialize the first quote with fade-in
+    quoteText.textContent = quotes[currentIndex].text;
+    quoteText.style.color = quotes[currentIndex].color; // Set initial color for first quote
+    quoteText.classList.add("fade-in");
 
-    // Manual quote switch by clicking on dots
-    dotElements.forEach(dot => {
-      dot.addEventListener("click", () => {
-        currentIndex = parseInt(dot.dataset.index);
-        showQuote(currentIndex);
-      });
-    });
+    // Switch quotes every 3 seconds
+    setInterval(switchQuote, 3000); // Increased duration to allow better visibility
 
-    // Initially show the first quote
-    showQuote(currentIndex);
+    // Append all content to container1
+    container1.appendChild(userInterviewsHeader);
+    container1.appendChild(userInterviewsContent);
+    container1.appendChild(feedbackLabel); // Add the feedback label
+    container1.appendChild(quotesContainer);
+
+    // Container 2: Usability Testing
+    const container2 = document.createElement("div");
+    container2.classList.add("container-style", "mb-4");  // Apply container-style class for styling
+
+    const usabilityTestingHeader = document.createElement("p");
+    usabilityTestingHeader.classList.add("fw-bold", "fs-5");
+    usabilityTestingHeader.innerText = "Usability Testing";
+
+    const usabilityTestingContent = document.createElement("p");
+    usabilityTestingContent.innerHTML = `Usability tests with the same 7 users confirmed key issues:<br>
+                                        • 71% of users couldn’t generate a new chatbot while another was in progress.<br>
+                                        • It took users 20 seconds on average to locate previously created chatbots.<br><br>
+                                        This drove the need for better workflow management and improved navigation.`;
+
+    container2.appendChild(usabilityTestingHeader);
+    container2.appendChild(usabilityTestingContent);
+
+    // Container 3: Competitive Analysis
+    const container3 = document.createElement("div");
+    container3.classList.add("container-style", "mb-4");  // Apply container-style class for styling
+
+    const competitiveAnalysisHeader = document.createElement("p");
+    competitiveAnalysisHeader.classList.add("fw-bold", "fs-5");
+    competitiveAnalysisHeader.innerText = "Competitive Analysis";
+
+    const competitiveAnalysisContent = document.createElement("p");
+    competitiveAnalysisContent.innerHTML = `I analyzed 5 competitor products to identify missing features and opportunities for differentiation.<br><br>
+                                           Key insight: Only one product supports chatbot customization, presenting an opportunity for CPII ChatDoc Master to innovate.`;
+
+    container3.appendChild(competitiveAnalysisHeader);
+    container3.appendChild(competitiveAnalysisContent);
+
+    // Append the containers to the research section
+    researchSection.appendChild(container1);
+    researchSection.appendChild(container2);
+    researchSection.appendChild(container3);
+
+    // Add the text directly below the 3 containers
+    const researchText = document.createElement("p");  // Just use a <p> element for the text
+    researchText.innerText = data.sections.research;  // Using the research section text
+
+    // Append the <p> directly to the research section
+    researchSection.appendChild(researchText);
+
+    // Update other sections
+    document.getElementById("opportunity-content").innerText = data.sections.opportunity;
+    document.getElementById("takeaways-content").innerText = data.sections.takeaways;
   }
 });
