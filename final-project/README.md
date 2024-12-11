@@ -6,10 +6,8 @@
 
 Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) to make your writeup more organized, and you can preview your markdown file in VSCode [Markdown editing with Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview). 
 
-
-## Part 1: Website Description
-
-Describe your website (300 words).
+## Link to PDF:
+https://drive.google.com/file/d/1BCrvrAFmVCUzUvcZNDzNZrrKuqnyX72P/view?usp=share_link
 
 ## Part 1: Website Description
 
@@ -137,7 +135,7 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
   1. ChatGPT: When I asked it to review my code for optimization, its suggestions often didn’t align with my goals. While it provided detailed advice, some of its recommendations were overly complicated or introduced unnecessary effects that I wasn’t looking for. For instance, it suggested adding animations to elements that didn’t need them, which made my design feel inconsistent with my intended style. This occasionally made the process of refining my code more time-consuming than expected, as I had to evaluate whether the suggestions were useful or counterproductive.
-  
+
 * GenAI tool did/did not influence my final design and implementation plan because … For example, 
   1. ChatGPT: It did not heavily influence my final design and implementation plan because, ultimately, my decisions were based on my own knowledge and understanding of how to use Bootstrap effectively. While ChatGPT assisted in troubleshooting and occasionally provided helpful ideas, the core of my implementation was guided by my initial plan and personal design preferences. For example, when I wanted to achieve specific effects and asked ChatGPT for help, its responses were sometimes incomplete or failed to produce the desired result. As a result, I relied on my own experimentation and decision-making to achieve my design goals, ensuring that the final output matched my vision.
 
