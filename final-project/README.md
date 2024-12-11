@@ -22,46 +22,46 @@ What makes the website interesting and engaging are the interactive elements and
 ## Part 2: User Interaction
 
 > Home Page
-1. Hero section title text change effect
+>> Hero section title text change effect
 - Interaction type: None required. The text changes automatically.
 - How to reproduce: Upon loading the page, the text in the hero section "Hello, I'm Hedy." is followed by the appearance of the second sentence, "I'm a product designer," after a few seconds with an automatic animated transition.
 
-2. Image and Project card hover effect
+>> Image and Project card hover effect
 - Interaction type: Hover
 - How to reproduce: When users hover their mouse over the images or project cards, the images or cards will enlarge slightly.
 
-3. Label tag hover effect
+>> Label tag hover effect
 - Interaction type: Hover
 - How to reproduce: When users hover over the tags (e.g., "WEB DESIGN") on each project card, the background color will change to a darker shade.
 
 > Project Page
-1. Navigation
+>> Navigation
 - Interaction type: Click
-- How to reproduce: Click on the navigation links in the sticky menu on the left to navigtate to the respective section on the right side of the page.
+- How to reproduce: Click on the navigation links in the sticky menu on the left to navigate to the respective section on the right side of the page.
 
-2. Switching quotes effect
+>> Switching quotes effect
 - Interaction type: None required. The effect occurs automatically.
 - How to reproduce: In the "User Interviews" subsection under the "Research" section, three quotes will automatically switch every few seconds, with colors changing as the quotes switch. 
 
-3. Video carousel
+>> Video carousel
 - Interaction type: Wait or click
 - How to reproduce: Either wait for the videos to switch automatically, or click on the left or right arrows to view the previous or next video in the carousel.
 
-4. Scrolling effect for text sections
+>> Scrolling effect for text sections
 - Interaction type: Open project page
 - How to reproduce: When project page is loaded, each section of text will fade in and slide up.
 
 > About Page
-1. Image carousel
+>> Image carousel
 - Interaction type: Wait or click
 - How to reproduce: Either wait for the images to switch automatically, or click on the carousel indicators (gray lines) to manually switch to another image in the carousel.
 
 > Top Navigation Bar (for all pages)
-1. Navigation
+>> Navigation
 - Interaction type: Click
-- How to reproduce: Click on the "H" logo or the "Home" link to navigate to the home page, and clicking on the "About" link to navigate to the about page.
+- How to reproduce: Click on the "H" logo or the "Home" link to navigate to the home page, and click on the "About" link to navigate to the about page.
 
-2. Navigation link hover effect
+>> Navigation link hover effect
 - Interaction type: Hover
 - How to reproduce: When users hover over the "Home" or "About" links, the text color will change to a darker gray.
 
@@ -103,9 +103,7 @@ These changes reflect my focus on making the website visually compelling and int
 
 ## Part 5: Implementation Challenge
 
-One challenge I faced was implementing the sticky navigation menu on the project page, while it initially directed users to the correct section, the content was clipped because the sticky navigation bar overlapped it. It took some time to identify the issue and resolve it by adding a scroll-margin-top to ensure proper display. 
-
-Another challenge was creating the text-change animation effect for the hero section on the homepage. It required experimenting with CSS and JavaScript to achieve a smooth and visually appealing transition.
+One challenge I faced was implementing the sticky navigation menu on the project page, while it initially directed users to the correct section, the content was clipped because the sticky navigation bar overlapped it. It took some time to identify the issue and resolve it by adding a scroll-margin-top to ensure proper display. Another challenge was creating the text-change animation effect for the hero section on the homepage. It required experimenting with CSS and JavaScript to achieve a smooth and visually appealing transition.
 
 ## Part 6: Generative AI Use and Reflection
 
@@ -151,7 +149,7 @@ For the following aspects of your project, edit the corresponding table cell to 
 * Pros
   1. ChatGPT: It helped me think through complex technical issues, especially debugging and integrating libraries like Bootstrap, which made the development process more efficient. It also provided useful alternatives and suggestions, such as responsiveness techniques, which aligned with my goals in some cases and enhanced the quality of my design.
 * Cons
-  1. ChatGPT: It ccasionally provided overly complex solutions or suggestions that didn’t fit the specific context of my project, requiring additional time to review and adjust. Moreover, its inability to fully understand nuanced design requirements or custom styles sometimes limited its effectiveness in addressing my challenges.
+  1. ChatGPT: It occasionally provided overly complex solutions or suggestions that didn’t fit the specific context of my project, requiring additional time to review and adjust. Moreover, its inability to fully understand nuanced design requirements or custom styles sometimes limited its effectiveness in addressing my challenges.
 
 
 ### Usage Log
