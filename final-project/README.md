@@ -11,35 +11,103 @@ Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/
 
 Describe your website (300 words).
 
-* What is the purpose of your website?   
-* Who is the target audience?  
-* What information do you convey with your website?   
-* How is it interesting and engaging? 
+## Part 1: Website Description
+
+My personal portfolio website is designed to showcase my work as a UX designer and demonstrate my coding skills. The purpose of this website is twofold: to highlight my design projects and to provide a platform where I can present my technical abilities, giving me a competitive edge in the job market. Coding the website myself also reflects my passion for both design and development, showing recruiters that I have the skills to build functional, engaging digital experiences.
+
+The primary target audience for my website includes recruiters and potential employers, as I plan to upload my portfolio when applying for jobs. Additionally, fellow UX designers who visit my LinkedIn profile may also view my portfolio to gain insight into my design process and skills.
+
+In terms of information, the website is divided into three main sections: the home page, a project page, and an about page. The home page features a brief self-introduction and three project cards that lead to more detailed project pages. One of the project pages showcases the entire project process, including Overview, Problems, Research, Opportunity, Solutions, and Takeaways. The about page includes a self-introduction along with photos that show different aspects of my personality.
+
+What makes the website interesting and engaging are the interactive elements and animations I’ve incorporated. Firstly, on the home page, a text change effect in the hero section creates a dynamic introduction. Secondly, hover effects on project cards and images make the website more visually appealing. Thirdly, on the project page, a sticky navigation menu allows users to quickly jump to different sections. Lastly, interactive video and image carousels on both the project and about pages keep the experience engaging and immersive.
 
 ## Part 2: User Interaction
 
-How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
+> Home Page
+1. Hero section title text change effect
+- Interaction type: None required. The text changes automatically.
+- How to reproduce: Upon loading the page, the text in the hero section "Hello, I'm Hedy." is followed by the appearance of the second sentence, "I'm a product designer," after a few seconds with an automatic animated transition.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+2. Image and Project card hover effect
+- Interaction type: Hover
+- How to reproduce: When users hover their mouse over the images or project cards, the images or cards will enlarge slightly.
+
+3. Label tag hover effect
+- Interaction type: Hover
+- How to reproduce: When users hover over the tags (e.g., "WEB DESIGN") on each project card, the background color will change to a darker shade.
+
+> Project Page
+1. Navigation
+- Interaction type: Click
+- How to reproduce: Click on the navigation links in the sticky menu on the left to navigtate to the respective section on the right side of the page.
+
+2. Switching quotes effect
+- Interaction type: None required. The effect occurs automatically.
+- How to reproduce: In the "User Interviews" subsection under the "Research" section, three quotes will automatically switch every few seconds, with colors changing as the quotes switch. 
+
+3. Video carousel
+- Interaction type: Wait or click
+- How to reproduce: Either wait for the videos to switch automatically, or click on the left or right arrows to view the previous or next video in the carousel.
+
+4. Scrolling effect for text sections
+- Interaction type: Open project page
+- How to reproduce: When project page is loaded, each section of text will fade in and slide up.
+
+> About Page
+1. Image carousel
+- Interaction type: Wait or click
+- How to reproduce: Either wait for the images to switch automatically, or click on the carousel indicators (gray lines) to manually switch to another image in the carousel.
+
+> Top Navigation Bar (for all pages)
+1. Navigation
+- Interaction type: Click
+- How to reproduce: Click on the "H" logo or the "Home" link to navigate to the home page, and clicking on the "About" link to navigate to the about page.
+
+2. Navigation link hover effect
+- Interaction type: Hover
+- How to reproduce: When users hover over the "Home" or "About" links, the text color will change to a darker gray.
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+1. Bootstrap
+   * Why did you choose to use it over other alternatives? 
+   Bootstrap offers a wide range of pre-built components, such as navigation bars and buttons. I chose it over alternatives like Foundation or Bulma because it is very easy to learn and implement and helps me simplify responsive design.
+   * How you used it? 
+   Bootstrap classes were used for layout, navigation bars, responsive grids, and card components. Links to Bootstrap CSS and JS files are included for styling and interactive behaviors like the navbar toggler.
+   * What does it add to your website?
+   It adds a professional and responsive layout, reducing the time needed for custom styling and ensuring compatibility across devices.
 
+2. Popper.js
+   * Why did you choose to use it over other alternatives? 
+   Popper.js is included as a dependency for Bootstrap to handle popovers and tooltips, ensuring compatibility. It was chosen because it's required for Bootstrap's functionality.
+   * How you used it? 
+   Popper.js is included via a CDN to enable interactive elements like the dropdown menu for navigation (for smaller screens).
+   * What does it add to your website?
+   Popper.js is included via a CDN to enable interactive elements like dropdowns and tooltips.
+
+3. jQuery
+   * Why did you choose to use it over other alternatives? 
+   jQuery is a lightweight JavaScript library that simplifies DOM manipulation and event handling. It is included here as a dependency for Bootstrap.
+   * How you used it? 
+   jQuery is included via a CDN to support Bootstrap's interactive components like modals and collapsible navigation.
+   * What does it add to your website?
+   It ensures seamless functionality for Bootstrap's features and simplifies handling cross-browser compatibility.
+      
 ## Part 4: Design Iteration
 
-Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+First, for the project page, I initially planned to showcase the solution designs using static GIFs in columns, as this was easier to implement. However, I realized that a video carousel would make the presentation more interactive and engaging, better capturing users' attention. This led me to switch to a video carousel format. 
+
+Second, for the hero section on the homepage, I initially planned to display static text. During implementation, I decided to add animated text that changes automatically, as it creates a dynamic and modern feel, while also drawing users into the content more effectively. 
+
+These changes reflect my focus on making the website visually compelling and interactive.
 
 ## Part 5: Implementation Challenge
 
-What challenges did you experience in implementing your website? (2-4 sentences max)
+One challenge I faced was implementing the sticky navigation menu on the project page, while it initially directed users to the correct section, the content was clipped because the sticky navigation bar overlapped it. It took some time to identify the issue and resolve it by adding a scroll-margin-top to ensure proper display. 
+
+Another challenge was creating the text-change animation effect for the hero section on the homepage. It required experimenting with CSS and JavaScript to achieve a smooth and visually appealing transition.
 
 ## Part 6: Generative AI Use and Reflection
 
@@ -57,49 +125,42 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| ChatGPT | Usage | No | No | Yes | Yes | No |
+| ChatGPT | Productivity | 4 | 4 | 6 | 6 | 4 |
 
 
 ### Usage Reflection
 
 > Impact on your design and plan 
 * It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: It was particularly effective for debugging. For example, when I encountered errors in my code—especially those caused by small oversights—it helped me identify issues that were in my blind spot. This was invaluable when I was dealing with large chunks of code or errors I couldn’t immediately understand. Additionally, it provided guidance on incorporating the Bootstrap library into my project, such as how to structure my HTML and CSS to avoid conflicts. It was particularly helpful in ensuring the default Bootstrap styles didn’t override my custom CSS code. By suggesting adjustments like using more specific selectors or applying overrides via custom classes, it saved me time and helped maintain the consistency of my design.
+
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: When I asked it to review my code for optimization, its suggestions often didn’t align with my goals. While it provided detailed advice, some of its recommendations were overly complicated or introduced unnecessary effects that I wasn’t looking for. For instance, it suggested adding animations to elements that didn’t need them, which made my design feel inconsistent with my intended style. This occasionally made the process of refining my code more time-consuming than expected, as I had to evaluate whether the suggestions were useful or counterproductive.
+  
 * GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: It did not heavily influence my final design and implementation plan because, ultimately, my decisions were based on my own knowledge and understanding of how to use Bootstrap effectively. While ChatGPT assisted in troubleshooting and occasionally provided helpful ideas, the core of my implementation was guided by my initial plan and personal design preferences. For example, when I wanted to achieve specific effects and asked ChatGPT for help, its responses were sometimes incomplete or failed to produce the desired result. As a result, I relied on my own experimentation and decision-making to achieve my design goals, ensuring that the final output matched my vision.
 
 > Use patterns
 * I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
+  1. ChatGPT: It once suggested using Bootstrap’s built-in properties to transform the navigation links in the top navigation bar into a hamburger menu for smaller screen sizes. I adopted this suggestion because it ensured my design was responsive and aligned with modern web development standards. Implementing this feature was efficient and enhanced the user experience without compromising my custom styles.
+
 * I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+  1. ChatGPT: It once recommended using Bootstrap’s default video carousel controls to display a sequence of videos on my project page. However, I rejected this suggestion because it interfered with my custom styles and resulted in misaligned elements. Instead, I uploaded chevron icons and manually implemented video controls to ensure proper alignment and consistency with my CSS styling. This approach allowed me to maintain control over the final aesthetic and functionality of my website.
 
 
 > Pros and cons of using GenAI tools
 * Pros
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: It helped me think through complex technical issues, especially debugging and integrating libraries like Bootstrap, which made the development process more efficient. It also provided useful alternatives and suggestions, such as responsiveness techniques, which aligned with my goals in some cases and enhanced the quality of my design.
 * Cons
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: It ccasionally provided overly complex solutions or suggestions that didn’t fit the specific context of my project, requiring additional time to review and adjust. Moreover, its inability to fully understand nuanced design requirements or custom styles sometimes limited its effectiveness in addressing my challenges.
 
 
 ### Usage Log
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
+1. [ChatGPT](https://chatgpt.com/share/6759153f-e630-8005-b1f3-9c2527aabf2c)
 
 ---
 
@@ -109,11 +170,23 @@ Document the changes and progress of your project. How have you followed or chan
 
 ## Implementation Plan Updates
 
-- [ ] ...
+Throughout the course of my project, I have made several adjustments to my original implementation plan.
+
+In Week 9, I successfully completed FP1 and used the feedback to decide on the final direction for my project, as planned. However, during Week 11, I found that my initial approach to the project changed slightly. Instead of beginning with the "About" page, I decided to start with the "Home" page, primarily because I wanted to experiment with a text change effect for the title in the hero section. This decision allowed me to incorporate an interactive feature early in the design, which enhanced the user experience and added a dynamic touch to the landing page.
+
+After completing the "Home" page, I moved on to the "Project" page, which took more time than I had anticipated. I planned to have a sticky navigation menu on the left side of the page for content navigation. The idea was to allow users to click on navigation links and jump to different sections on the right side of the page. Getting the style for the sticky navigation right took a significant amount of time and attention, as I wanted to ensure that the menu was both functional and visually aligned with the overall design.
+
+I did follow my plan for the later stages of the project. During the last two days, I focused on reviewing the entire portfolio website to ensure that everything was working smoothly, including checking the correct linkage of navigation, ensuring images displayed properly, and verifying that all functions were working as intended. 
+
+While some of my tasks shifted in sequence and took more time than expected, I was able to stay on track and meet the project’s requirements. 
 
 ## Generative AI Use Plan Updates
 
-- [ ] ...
+In line with my original plan, I utilized ChatGPT for two main purposes during the development of my design portfolio website. Firstly, I used ChatGPT for debugging when I encountered error messages that I did not fully understand. When these errors arose, I would ask ChatGPT to explain the nature of the message and provide insights into potential causes. This helped me identify the root causes of the issues and find more efficient solutions.
+
+Secondly, there were instances where some of my code did not work as intended, potentially due to conflicts between the default styles of the Bootstrap library and my custom css code. In these cases, I asked ChatGPT to review snippets of my css code to help resolve issues, such as code overriding problems with the Bootstrap library. ChatGPT provided suggestions that guided me in refining my code, ensuring that the styling and functionality aligned correctly.
+
+I adhered to my original plan by using ChatGPT for these supportive tasks, focusing on debugging and improving code efficiency. As intended, I refrained from using it for final edits or critical decision-making.
 
 Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-generative-ai-use-and-reflection).
 
